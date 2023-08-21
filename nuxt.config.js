@@ -2,7 +2,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title:
-      "Rivate - Vue Technology Startup & Business Agency Template + Admin Panel",
+      "Evolve BPM - ",
     htmlAttrs: {
       lang: "zxx",
     },
