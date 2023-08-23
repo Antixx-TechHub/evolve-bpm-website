@@ -11,7 +11,7 @@
                             <i class='bx bx-map'></i>
                         </div>
                         <h3>Our Address</h3>
-                        <p>175 5th Ave, New York, NY 10010, United States</p>
+                        <p>EvolveBPM Inc. Ltd. (UK Registered Office) 12 Constance Street, London, England E16 2DQ, GB</p>
                     </div>
                 </div>
 
@@ -24,8 +24,8 @@
                             <i class='bx bx-phone-call'></i>
                         </div>
                         <h3>Contact</h3>
-                        <p>Mobile: <a href="tel:+44457895789">(+44) - 45789 - 5789</a></p>
-                        <p>E-mail: <a href="mailto:hello@rivate.com">hello@rivate.com</a></p>
+                        <p>Mobile: <a href="tel:+44457895789">IN: +91-020-69029999</a></p>
+                        <p>E-mail: <a href="mailto:hello@rivate.com">corporate@evolvebpm.com</a></p>
                     </div>
                 </div>
 

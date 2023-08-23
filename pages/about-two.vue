@@ -1,36 +1,36 @@
 <template>
     <div>
-        <NavbarStyleFour />
+        <NavbarStyleTwo class="rivate-new-navbar-area" />
         <PageTitle pageTitle="About Us" />
         <AboutUsStyleThree class="pt-100" />
         <HistoryBegins />
         <OurTeamStyleTwo />
         <WhatOurClientsSaying />
         <Partner />
-        <Footer />
+        <FooterTwo />
     </div>
 </template>
 
 <script>
-    import NavbarStyleFour from '../layouts/NavbarStyleFour'
+    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
     import PageTitle from '../components/Common/PageTitle'
     import AboutUsStyleThree from '../components/Common/AboutUsStyleThree'
     import HistoryBegins from '../components/Common/HistoryBegins'
     import OurTeamStyleTwo from '../components/Common/OurTeamStyleTwo'
     import WhatOurClientsSaying from '../components/HomeThree/WhatOurClientsSaying'
     import Partner from '../components/Common/Partner'
-    import Footer from '../layouts/Footer'
+    import FooterTwo from '../layouts/FooterTwo'
 
     export default {
         components: {
-            NavbarStyleFour,
+            NavbarStyleTwo,
             PageTitle,
             AboutUsStyleThree,
             HistoryBegins,
             OurTeamStyleTwo,
             WhatOurClientsSaying,
             Partner,
-            Footer,
+            FooterTwo,
         }
     }
 </script>

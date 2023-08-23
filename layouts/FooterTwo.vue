@@ -5,7 +5,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <NuxtLink to="/" class="logo">
-                            <img src="~/assets/images/white-logo.png" alt="logo">
+                            <img src="~/assets/images/newlogo.svg" alt="logo">
                         </NuxtLink>
                         <p>EvolveBPM is a new generation provider of
                             disruptive Revenue Growth (RG) solutions for
@@ -33,11 +33,11 @@
                                 <NuxtLink to="/">Home</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/about-one">About</NuxtLink>
+                                <NuxtLink to="/about-two">About</NuxtLink>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <NuxtLink to="/pricing">Pricing</NuxtLink>
-                            </li>
+                            </li> -->
                             <li>
                                 <NuxtLink to="/portfolio-one">Portfolio</NuxtLink>
                             </li>
@@ -62,9 +62,9 @@
                             <li>
                                 <NuxtLink to="/services-one">Services</NuxtLink>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <NuxtLink to="/faq">FAQ</NuxtLink>
-                            </li>
+                            </li> -->
                             <li>
                                 <NuxtLink to="/blog-one">Blog</NuxtLink>
                             </li>
@@ -77,10 +77,10 @@
                         <h3>Address</h3>
 
                         <ul class="footer-contact-info">
-                            <li><i class='bx bx-map'></i>175 5th Ave Premium Area, New York, NY 10010, United States</li>
-                            <li><i class='bx bx-phone-call'></i><a href="tel:+11234567890">+1 (123) 456 7890</a></li>
-                            <li><i class='bx bx-envelope'></i><a href="mailto:hello@rivate.com">hello@rivate.com</a></li>
-                            <li><i class='bx bxs-inbox'></i><a href="tel:+557854578964">+55 785 4578964</a></li>
+                            <li><i class='bx bx-map'></i>EvolveBPM Inc. Ltd. (UK Registered Office) 12 Constance Street, London, England E16 2DQ, GB</li>
+                            <li><i class='bx bx-phone-call'></i><a href="tel:+11234567890">+91-020-69029999</a></li>
+                            <li><i class='bx bx-envelope'></i><a href="mailto:hello@rivate.com">corporate@evolvebpm.com</a></li>
+                            <li><i class='bx bxs-inbox'></i><a href="tel:+557854578964">+91-020-69029999</a></li>
                         </ul>
                     </div>
                 </div>

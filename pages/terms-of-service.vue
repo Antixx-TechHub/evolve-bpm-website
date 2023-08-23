@@ -1,24 +1,24 @@
 <template>
     <div>
-        <NavbarStyleFour />
+        <NavbarStyleTwo class="rivate-new-navbar-area" />
         <PageTitle pageTitle="Terms Of Service" />
         <TermsOfServiceContent />
-        <Footer />
+        <FooterTwo />
     </div>
 </template>
 
 <script>
-    import NavbarStyleFour from '../layouts/NavbarStyleFour'
+    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
     import PageTitle from '../components/Common/PageTitle'
     import TermsOfServiceContent from '../components/TermsOfService/TermsOfServiceContent'
-    import Footer from '../layouts/Footer'
+    import FooterTwo from '../layouts/FooterTwo'
 
     export default {
         components: {
-            NavbarStyleFour,
+            NavbarStyleTwo,
             PageTitle,
             TermsOfServiceContent,
-            Footer,
+            FooterTwo,
         }
     }
 </script>

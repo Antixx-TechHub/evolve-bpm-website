@@ -1,6 +1,7 @@
 <template>
     <div>
         <NavbarStyleTwo class="rivate-new-navbar-area" />
+        <!-- <Navbar /> -->
         <MainBanner />
         <Features />
         <AboutUs />
@@ -19,6 +20,7 @@
 
 <script>
     import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+    // import Navbar from '../layouts/Navbar'
     import MainBanner from '../components/HomeEight/MainBanner'
     import Features from '../components/HomeEight/Features'
     import AboutUs from '../components/HomeEight/AboutUs'
@@ -36,6 +38,7 @@
     export default {
         components: {
             NavbarStyleTwo,
+            // Navbar,
             MainBanner,
             Features,
             AboutUs,
