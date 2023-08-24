@@ -5,217 +5,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-team-member">
                         <div class="image">
-                            <img src="~/assets/images/team/satish.png" alt="team-image">
-
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/satish-k-sadasivan" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="content">
-                            <h3>Satish Sadasivan</h3>
-                            <span>Founder & CEO</span>
-                            <i class="flaticon-share-icon"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team-member">
-                        <div class="image">
-                            <img src="~/assets/images/team/kev.png" alt="team-image">
-
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/kevin-conlon-1b140b/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="content">
-                            <h3>Kevin Conlon</h3>
-                            <span>President & CRO</span>
-                            <i class="flaticon-share-icon"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team-member">
-                        <div class="image">
-                            <img src="~/assets/images/team/EDGolod.png" alt="team-image">
-
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/edwardgolod/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="content">
-                            <h3>Ed Golod</h3>
-                            <span>Advisor</span>
-                            <i class="flaticon-share-icon"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team-member">
-                        <div class="image">
-                            <img src="~/assets/images/team/bruin.png" alt="team-image">
-
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/martindebruin1/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="content">
-                            <h3>Martin De Bruin</h3>
-                            <span>DPO</span>
-                            <i class="flaticon-share-icon"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team-member">
-                        <div class="image">
-                            <img src="~/assets/images/team/AkshayDeshpande.png" alt="team-image">
-
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/akshay-deshpande-44b966173/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="content">
-                            <h3>Akshay Deshpande</h3>
-                            <span>Vice President – Americas</span>
-                            <i class="flaticon-share-icon"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team-member">
-                        <div class="image">
-                            <img src="~/assets/images/team/SahilSharma.png" alt="team-image">
-
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/sahilsharmaphoenix/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="content">
-                            <h3>Sahil Sharma</h3>
-                            <span>Vice President – Europe & ROW</span>
-                            <i class="flaticon-share-icon"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team-member">
-                        <div class="image">
-                            <img src="~/assets/images/team/rajeev.png" alt="team-image">
-
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/rajeev-kunwar-6725b517" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="content">
-                            <h3>Rajeev Ranjan</h3>
-                            <span>Vice President – HR</span>
-                            <i class="flaticon-share-icon"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team-member">
-                        <div class="image">
-                            <img src="~/assets/images/team/pradip.png" alt="team-image">
-
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/pradip-tiwary-1030857/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="content">
-                            <h3>Pradip Tiwary</h3>
-                            <span>Vice President – Database Management</span>
-                            <i class="flaticon-share-icon"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team-member">
-                        <div class="image">
-                            <img src="~/assets/images/team/nithyanandan.png" alt="team-image">
-
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/nithy" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="content">
-                            <h3>Nithyanandan Ramakrishna</h3>
-                            <span>Vice President – Email Solutions</span>
-                            <i class="flaticon-share-icon"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team-member">
-                        <div class="image">
-                            <img src="~/assets/images/team/reena.png" alt="team-image">
-
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/reenasarajohn/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="content">
-                            <h3>Reena John</h3>
-                            <span>Vice President – Audit & Compliance</span>
-                            <i class="flaticon-share-icon"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team-member">
-                        <div class="image">
-                            <img src="~/assets/images/team/naditapriya.png" alt="team-image">
+                            <img src="~/assets/images/team/team-img1.jpg" alt="team-image">
 
                             <ul class="social-link">
                                 <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
@@ -226,14 +16,224 @@
                         </div>
 
                         <div class="content">
-                            <h3>Nandita Priya</h3>
-                            <span>CSR Outreach</span>
+                            <h3>James Anderson</h3>
+                            <span>CEO</span>
                             <i class="flaticon-share-icon"></i>
                         </div>
                     </div>
                 </div>
 
-                <!-- <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image">
+                            <img src="~/assets/images/team/team-img2.jpg" alt="team-image">
+
+                            <ul class="social-link">
+                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Sarah Taylor</h3>
+                            <span>Marketing Lead</span>
+                            <i class="flaticon-share-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image">
+                            <img src="~/assets/images/team/team-img3.jpg" alt="team-image">
+
+                            <ul class="social-link">
+                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Taylor Sopia</h3>
+                            <span>Web Designer</span>
+                            <i class="flaticon-share-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image">
+                            <img src="~/assets/images/team/team-img4.jpg" alt="team-image">
+
+                            <ul class="social-link">
+                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Harry Steve</h3>
+                            <span>Web Developer</span>
+                            <i class="flaticon-share-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image">
+                            <img src="~/assets/images/team/team-img5.jpg" alt="team-image">
+
+                            <ul class="social-link">
+                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Alina Smith</h3>
+                            <span>Advisor</span>
+                            <i class="flaticon-share-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image">
+                            <img src="~/assets/images/team/team-img6.jpg" alt="team-image">
+
+                            <ul class="social-link">
+                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>David Warner</h3>
+                            <span>Support</span>
+                            <i class="flaticon-share-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image">
+                            <img src="~/assets/images/team/team-img7.jpg" alt="team-image">
+
+                            <ul class="social-link">
+                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Steven Smith</h3>
+                            <span>Support</span>
+                            <i class="flaticon-share-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image">
+                            <img src="~/assets/images/team/team-img8.jpg" alt="team-image">
+
+                            <ul class="social-link">
+                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>John Terry</h3>
+                            <span>Support</span>
+                            <i class="flaticon-share-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image">
+                            <img src="~/assets/images/team/team-img9.jpg" alt="team-image">
+
+                            <ul class="social-link">
+                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Amelia Eva</h3>
+                            <span>Advisor</span>
+                            <i class="flaticon-share-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image">
+                            <img src="~/assets/images/team/team-img10.jpg" alt="team-image">
+
+                            <ul class="social-link">
+                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Liam Noah</h3>
+                            <span>Support</span>
+                            <i class="flaticon-share-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image">
+                            <img src="~/assets/images/team/team-img11.jpg" alt="team-image">
+
+                            <ul class="social-link">
+                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.twitter.com/" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Olivia Emma</h3>
+                            <span>Support</span>
+                            <i class="flaticon-share-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-team-member">
                         <div class="image">
                             <img src="~/assets/images/team/team-img12.jpg" alt="team-image">
@@ -252,7 +252,7 @@
                             <i class="flaticon-share-icon"></i>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>

@@ -1,24 +1,24 @@
 <template>
     <div>
-        <NavbarStyleTwo />
+        <NavbarStyleFour />
         <PageTitle pageTitle="Blog Grid (3 in Row)" />
         <BlogTwoContent />
-        <FooterTwo />
+        <Footer />
     </div>
 </template>
 
 <script>
-    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+    import NavbarStyleFour from '../layouts/NavbarStyleFour'
     import PageTitle from '../components/Common/PageTitle'
     import BlogTwoContent from '../components/BlogTwo/BlogTwoContent'
-    import FooterTwo from '../layouts/FooterTwo'
+    import Footer from '../layouts/Footer'
 
     export default {
         components: {
-            NavbarStyleTwo,
+            NavbarStyleFour,
             PageTitle,
             BlogTwoContent,
-            FooterTwo,
+            Footer,
         }
     }
 </script>

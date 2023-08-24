@@ -1,25 +1,25 @@
 <template>
     <div class="startup-it-agency-color-css">
-        <NavbarStyleTwo />
+        <NavbarStyleSeven class="navbar-area-with-startup-it-agency" />
         <PageTitle />
         <CaseStudiesDetails />
-        <FooterTwo class="it-footer-area" />
+        <FooterThree class="it-footer-area" />
     </div>
 </template>
 
 <script>
-import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+import NavbarStyleSeven from '../layouts/NavbarStyleSeven'
 import PageTitle from '../components/CaseStudiesDetails/PageTitle'
 import CaseStudiesDetails from '../components/CaseStudiesDetails/CaseStudiesDetails'
-import FooterTwo from '../layouts/FooterTwo'
+import FooterThree from '../layouts/FooterThree'
 
 export default {
     name: 'CaseStudiesDetailsPage',
     components: {
-        NavbarStyleTwo,
+        NavbarStyleSeven,
         PageTitle,
         CaseStudiesDetails,
-        FooterTwo,
+        FooterThree,
     }
 }
 </script>

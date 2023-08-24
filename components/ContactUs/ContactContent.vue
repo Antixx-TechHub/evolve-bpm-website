@@ -3,8 +3,8 @@
         <div class="container">
             <div class="section-title">
                 <span class="sub-title">Get in Touch</span>
-                <h5>Connect with Us to Harness the Power of Our Customer Intelligence Platform<span class="overlay"></span></h5>
-                <p>Have questions? Need help? Get in touch with us by completing the form below. Or you can directly call or drop us an email!</p>
+                <h2>Ready to Get Started?<span class="overlay"></span></h2>
+                <p>Your email address will not be published. Required fields are marked *</p>
             </div>
 
             <div class="row">
@@ -20,13 +20,7 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="name" required placeholder="First Name">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="name" required placeholder="Last Name">
+                                        <input type="text" name="name" class="form-control" id="name" required placeholder="Your name">
                                     </div>
                                 </div>
 
@@ -39,12 +33,6 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <input type="text" name="phone_number" class="form-control" id="phone_number" required placeholder="Your phone number">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="name" required placeholder="Company">
                                     </div>
                                 </div>
 

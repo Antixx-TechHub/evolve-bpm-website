@@ -21,7 +21,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <!-- <li class="nav-item">
+                                    <li class="nav-item">
                                         <NuxtLink to="/" class="nav-link">
                                             Home Demo - 1
                                         </NuxtLink>
@@ -60,7 +60,7 @@
                                         <NuxtLink to="/home-seven" class="nav-link">
                                             Home Demo - 7
                                         </NuxtLink>
-                                    </li> -->
+                                    </li>
 
                                     <li class="nav-item">
                                         <NuxtLink to="/home-eight" class="nav-link">
@@ -69,7 +69,7 @@
                                         </NuxtLink>
                                     </li>
 
-                                    <!-- <li class="nav-item">
+                                    <li class="nav-item">
                                         <NuxtLink to="/home-nine" class="nav-link">
                                             Home Demo - 9
                                             <span>New</span>
@@ -95,7 +95,7 @@
                                             Home Demo - 12
                                             <span>New</span>
                                         </NuxtLink>
-                                    </li> -->
+                                    </li>
                                 </ul>
                             </li>
 
@@ -105,13 +105,13 @@
                                     <i class='bx bx-chevron-down'></i>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <!-- <li class="nav-item"><NuxtLink to="/about-one" class="nav-link">About Us 1</NuxtLink></li> -->
+                                    <li class="nav-item"><NuxtLink to="/about-one" class="nav-link">About Us 1</NuxtLink></li>
 
                                     <li class="nav-item"><NuxtLink to="/about-two" class="nav-link">About Us 2</NuxtLink></li>
 
                                     <li class="nav-item"><a href="#" class="nav-link">Team <i class='bx bx-chevron-right'></i></a>
                                         <ul class="dropdown-menu">
-                                            <!-- <li class="nav-item"><NuxtLink to="/team-one" class="nav-link">Team 1</NuxtLink></li> -->
+                                            <li class="nav-item"><NuxtLink to="/team-one" class="nav-link">Team 1</NuxtLink></li>
             
                                             <li class="nav-item"><NuxtLink to="/team-two" class="nav-link">Team 2</NuxtLink></li>
                                         </ul>
@@ -122,20 +122,20 @@
                             <li class="nav-item"><a href="#" class="nav-link">Services <i class='bx bx-chevron-down'></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><NuxtLink to="/services-one" class="nav-link">Services One</NuxtLink></li>
-<!-- 
+
                                     <li class="nav-item"><NuxtLink to="/services-two" class="nav-link">Services Two</NuxtLink></li>
 
                                     <li class="nav-item"><NuxtLink to="/services-three" class="nav-link">Services Three</NuxtLink></li>
 
-                                    <li class="nav-item"><NuxtLink to="/services-details" class="nav-link">Services Details</NuxtLink></li> -->
+                                    <li class="nav-item"><NuxtLink to="/services-details" class="nav-link">Services Details</NuxtLink></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item"><a href="#" class="nav-link">Pages <i class='bx bx-chevron-down'></i></a>
                                 <ul class="dropdown-menu">
-                                    <!-- <li class="nav-item"><NuxtLink to="/pricing" class="nav-link">Pricing</NuxtLink></li> -->
+                                    <li class="nav-item"><NuxtLink to="/pricing" class="nav-link">Pricing</NuxtLink></li>
 
-                                    <!-- <li class="nav-item"><a href="#" class="nav-link">Shop <i class='bx bx-chevron-right'></i></a>
+                                    <li class="nav-item"><a href="#" class="nav-link">Shop <i class='bx bx-chevron-right'></i></a>
                                         <ul class="dropdown-menu">
                                             <li class="nav-item"><NuxtLink to="/products-list" class="nav-link">Products List</NuxtLink></li>
             
@@ -145,11 +145,11 @@
     
                                             <li class="nav-item"><NuxtLink to="/products-details" class="nav-link">Products Details</NuxtLink></li>
                                         </ul>
-                                    </li> -->
+                                    </li>
 
-                                    <!-- <li class="nav-item"><NuxtLink to="/faq" class="nav-link">FAQ</NuxtLink></li>
+                                    <li class="nav-item"><NuxtLink to="/faq" class="nav-link">FAQ</NuxtLink></li>
                                     
-                                    <li class="nav-item"><NuxtLink to="/profile-authentication" class="nav-link">Login/Register</NuxtLink></li> -->
+                                    <li class="nav-item"><NuxtLink to="/profile-authentication" class="nav-link">Login/Register</NuxtLink></li>
     
                                     <li class="nav-item"><NuxtLink to="/privacy-policy" class="nav-link">Privacy Policy</NuxtLink></li>
     
@@ -161,21 +161,21 @@
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="#" class="nav-link">Portfolio Style One <i class='bx bx-chevron-right'></i></a>
                                         <ul class="dropdown-menu">
-                                            <!-- <li class="nav-item"><NuxtLink to="/portfolio-one" class="nav-link">Portfolio 2 Columns</NuxtLink></li> -->
+                                            <li class="nav-item"><NuxtLink to="/portfolio-one" class="nav-link">Portfolio 2 Columns</NuxtLink></li>
 
                                             <li class="nav-item"><NuxtLink to="/portfolio-two" class="nav-link">Portfolio 3 Columns</NuxtLink></li>
 
-                                            <!-- <li class="nav-item"><NuxtLink to="/portfolio-three" class="nav-link">Portfolio No Space</NuxtLink></li> -->
+                                            <li class="nav-item"><NuxtLink to="/portfolio-three" class="nav-link">Portfolio No Space</NuxtLink></li>
                                         </ul>
                                     </li>
 
                                     <li class="nav-item"><a href="#" class="nav-link">Portfolio Style Two <i class='bx bx-chevron-right'></i></a>
                                         <ul class="dropdown-menu">
-                                            <!-- <li class="nav-item"><NuxtLink to="/portfolio-four" class="nav-link">Portfolio 2 Columns</NuxtLink></li> -->
+                                            <li class="nav-item"><NuxtLink to="/portfolio-four" class="nav-link">Portfolio 2 Columns</NuxtLink></li>
 
                                             <li class="nav-item"><NuxtLink to="/portfolio-five" class="nav-link">Portfolio 3 Columns</NuxtLink></li>
 
-                                            <!-- <li class="nav-item"><NuxtLink to="/portfolio-six" class="nav-link">Portfolio No Space</NuxtLink></li> -->
+                                            <li class="nav-item"><NuxtLink to="/portfolio-six" class="nav-link">Portfolio No Space</NuxtLink></li>
                                         </ul>
                                     </li>
 
@@ -214,7 +214,7 @@
                         </ul>
                     </b-collapse>
 
-                    <!-- <div class="others-option d-flex align-items-center">
+                    <div class="others-option d-flex align-items-center">
                         <div class="option-item">
                             <div class="cart-btn">
                                 <NuxtLink to="/cart">
@@ -251,7 +251,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </nav>
             </div>
         </div>

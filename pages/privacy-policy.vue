@@ -1,24 +1,24 @@
 <template>
     <div>
-        <NavbarStyleTwo class="rivate-new-navbar-area" />
+        <NavbarStyleFour />
         <PageTitle pageTitle="Privacy Policy" />
         <PrivacyPolicyContent />
-        <FooterTwo />
+        <Footer />
     </div>
 </template>
 
 <script>
-    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+    import NavbarStyleFour from '../layouts/NavbarStyleFour'
     import PageTitle from '../components/Common/PageTitle'
     import PrivacyPolicyContent from '../components/PrivacyPolicy/PrivacyPolicyContent'
-    import FooterTwo from '../layouts/FooterTwo'
+    import Footer from '../layouts/Footer'
 
     export default {
         components: {
-            NavbarStyleTwo,
+            NavbarStyleFour,
             PageTitle,
             PrivacyPolicyContent,
-            FooterTwo,
+            Footer,
         }
     }
 </script>

@@ -1,57 +1,29 @@
 <template>
     <section class="blog-area bg-f9f9f9 ptb-100">
         <div class="container">
-                <span>
-                    <h2>Our Latest Blog</h2>
-                </span>
-            <div class="row" v-if="blogs !== []">
-                <div class="col-lg-4 col-md-6" v-for="blog in blogs.slice(
-                    (currentPage - 1) * perPage,
-                    currentPage * perPage,
-                )" :key="blog.id">
-
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-blog-post">
                         <div class="image">
-                            <NuxtLink :to="'/blog-details/' + blog.attributes.slug" class="d-block">
-                                <img :src="blog.attributes.image.data.attributes.url" alt="blog">
+                            <NuxtLink to="/blog-details-one" class="d-block">
+                                <img src="~/assets/images/blog/blog-img1.jpg" alt="image">
                             </NuxtLink>
                         </div>
 
                         <div class="content">
-                            <h3>
-                                <NuxtLink :to="'/blog-details/' + blog.attributes.slug">
-                                    {{ blog.attributes.title }}
-                                </NuxtLink>
-                            </h3>
-
-                            <p>
-                                {{ blog.attributes.shortDesc }} <br>
-                                <NuxtLink :to="'/blog-details/' + blog.attributes.slug">
-                                    {{ blog.attributes.btnText }}
-                                </NuxtLink>
-                            </p>
-
-                            <div class="info">
-                                <div class="post-by">
-                                    <h6>{{ blog.attributes.name }}</h6>
-                                </div>
-                            </div>
-
+                            <h3><NuxtLink to="/blog-details-one">Digital Marketing Agency Blogs You Should Read</NuxtLink></h3>
                             <div class="d-flex align-items-center">
+                                <img src="~/assets/images/user1.jpg" alt="image">
                                 <div class="info">
-                                    <span>
-                                        <div class="date">
-                                            <i class='bx bx-calendar'></i>
-                                            {{ blog.attributes.date }}
-                                        </div>
-                                    </span>
+                                    <h5>David Smith</h5>
+                                    <span>Jun 21, 2021</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-blog-post">
                         <div class="image">
                             <NuxtLink to="/blog-details-one" class="d-block">
@@ -154,18 +126,16 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
                 <div class="col-lg-12 col-md-12">
                     <div class="pagination-area text-center">
-                        <!-- <a href="/blog-two" class="prev page-numbers"><i class='bx bx-chevrons-left'></i></a>
+                        <a href="/blog-two" class="prev page-numbers"><i class='bx bx-chevrons-left'></i></a>
                         <span class="page-numbers current" aria-current="page">1</span>
                         <a href="/blog-two" class="page-numbers">2</a>
                         <a href="/blog-two" class="page-numbers">3</a>
                         <a href="/blog-two" class="page-numbers">4</a>
-                        <a href="/blog-two" class="next page-numbers"><i class='bx bx-chevrons-right'></i></a> -->
-                   <b-pagination v-model="currentPage" :total-rows="rows" :per-page="perPage" aria-controls="itemList"
-                        align="center"></b-pagination>
+                        <a href="/blog-two" class="next page-numbers"><i class='bx bx-chevrons-right'></i></a>
                     </div>
                 </div>
             </div>
@@ -175,22 +145,7 @@
 
 <script>
 
-import axios from 'axios';
-
 export default {
-    name: 'BlogTwoContent',
-    data() {
-        return {
-            blogs: [],
-            rows: 0,
-            currentPage: 1,
-            perPage: 6,
-        }
-    },
-    created: async function () {
-        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/blogs?populate=*')
-        this.blogs = response.data.data.sort((b, a) => a.id - b.id);
-        this.rows = this.blogs?.length;
-    },
+    name: 'BlogTwoContent'
 }
 </script>
