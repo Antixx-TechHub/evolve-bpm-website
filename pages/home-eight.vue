@@ -1,54 +1,48 @@
 <template>
     <div>
-        <NavbarStyleTwo class="rivate-new-navbar-area" />
+        <Navbar />
         <MainBanner />
-        <Features />
+        <OurFeaturedServices />
         <AboutUs />
         <WhatWeDo />
         <CheckOurServices />
-        <OurTeam />
-        <Video />
-        <Partner />
-        <Pricing />
         <OurClientsAreSaying />
-        <LatestBlog />
+        <Partner />
+        <OurTeam />
+        <OurFlexiblePricingPlan />
         <OurNewsletter />
-        <FooterTwo />
+        <Footer />
     </div>
 </template>
 
 <script>
-    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
-    import MainBanner from '../components/HomeEight/MainBanner'
-    import Features from '../components/HomeEight/Features'
-    import AboutUs from '../components/HomeEight/AboutUs'
-    import WhatWeDo from '../components/HomeEight/WhatWeDo'
-    import CheckOurServices from '../components/HomeEight/CheckOurServices'
-    import OurTeam from '../components/HomeEight/OurTeam'
-    import Video from '../components/HomeEight/Video'
-    import Partner from '../components/HomeEight/Partner'
-    import Pricing from '../components/HomeEight/Pricing'
-    import OurClientsAreSaying from '../components/HomeEight/OurClientsAreSaying'
-    import LatestBlog from '../components/HomeEight/LatestBlog'
-    import OurNewsletter from '../components/HomeEight/OurNewsletter'
-    import FooterTwo from '../layouts/FooterTwo'
+    import Navbar from '../layouts/Navbar'
+    import MainBanner from '../components/HomeOne/MainBanner'
+    import OurFeaturedServices from '../components/Common/OurFeaturedServices'
+    import AboutUs from '../components/Common/AboutUs'
+    import WhatWeDo from '../components/Common/WhatWeDo'
+    import CheckOurServices from '../components/Common/CheckOurServices'
+    import OurClientsAreSaying from '../components/Common/OurClientsAreSaying'
+    import Partner from '../components/Common/Partner'
+    import OurTeam from '../components/Common/OurTeam'
+    import OurFlexiblePricingPlan from '../components/Common/OurFlexiblePricingPlan'
+    import OurNewsletter from '../components/Common/OurNewsletter'
+    import Footer from '../layouts/Footer'
 
     export default {
         components: {
-            NavbarStyleTwo,
+            Navbar,
             MainBanner,
-            Features,
+            OurFeaturedServices,
             AboutUs,
             WhatWeDo,
             CheckOurServices,
-            OurTeam,
-            Video,
-            Partner,
-            Pricing,
             OurClientsAreSaying,
-            LatestBlog,
+            Partner,
+            OurTeam,
+            OurFlexiblePricingPlan,
             OurNewsletter,
-            FooterTwo,
+            Footer,
         }
     }
 </script>

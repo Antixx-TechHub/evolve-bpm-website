@@ -5,7 +5,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <NuxtLink to="/" class="logo">
-                            <img src="~/assets/images/white-logo.png" alt="logo">
+                            <img src="~/assets/images/newlogo.svg" alt="logo">
                         </NuxtLink>
                         <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
 

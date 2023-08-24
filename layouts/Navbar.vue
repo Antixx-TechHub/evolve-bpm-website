@@ -4,7 +4,7 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <NuxtLink class="navbar-brand" to="/">
-                        <img src="~/assets/images/logo.png" alt="logo">
+                        <img src="~/assets/images/newlogo.svg" alt="logo">
                     </NuxtLink>
 
                     <b-navbar-toggle target="navbarSupportedContent">
