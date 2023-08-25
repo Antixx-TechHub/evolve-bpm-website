@@ -91,8 +91,7 @@
             <div class="footer-bottom-area">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
-                        <p><i class='bx bx-copyright'></i> <strong>2023 EvolveBPM,</strong> LLC. All rights reserved. |
-                            <a target="_blank" href="https://envytheme.com/privacy-policy">Privacy Policy</a></p>
+                        <p><i class='bx bx-copyright'></i> <strong>2023 EvolveBPM,</strong> LLC. All rights reserved.</p>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
