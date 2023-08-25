@@ -51,21 +51,21 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-md-12">
+                <div class="col-lg-4 col-md-12">
                     <BlogSidebar />
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-// import BlogSidebar from '../Common/BlogSidebar'
+import BlogSidebar from '../Common/BlogSidebar'
 
 export default {
     name: 'BlogDetails',
     components: {
-        // BlogSidebar
+        BlogSidebar
     },
     props: ['detailsContent'],
     data: function () {

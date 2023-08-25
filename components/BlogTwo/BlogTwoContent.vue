@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="col-lg-12 col-md-12">
-                    <div class="pagination-area">
+                    <div class="pagination-area text-center">
                         <b-pagination v-model="currentPage" :total-rows="rows" :per-page="perPage" aria-controls="itemList"
                             align="center"></b-pagination>
                     </div>
