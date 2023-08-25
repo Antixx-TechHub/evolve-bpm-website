@@ -1,6 +1,6 @@
 {
-  "name": "deal-dox",
-  "version": "1.0.0",
+  "name": "Evolve-BPM",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "nuxt",
