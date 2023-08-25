@@ -2,6 +2,7 @@
     <div>
         <NavbarStyleTwo />
         <PageTitle pageTitle="Blog Grid (3 in Row)" />
+        <FeaturedBlogMain />
         <BlogTwoContent />
         <FooterTwo/>
     </div>
@@ -10,6 +11,7 @@
 <script>
     import NavbarStyleTwo from '../layouts/Navbar'
     import PageTitle from '../components/Common/PageTitle'
+    import FeaturedBlogMain from '../components/BlogTwo/FeaturedBlogMain'
     import BlogTwoContent from '../components/BlogTwo/BlogTwoContent'
     import FooterTwo from '../layouts/Footer'
 
@@ -17,6 +19,7 @@
         components: {
             NavbarStyleTwo,
             PageTitle,
+            FeaturedBlogMain,
             BlogTwoContent,
             FooterTwo,
         }
