@@ -12,7 +12,7 @@
 </template>
 
 <script>
-    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+    import NavbarStyleTwo from '../layouts/Navbar'
     import PageTitle from '../components/Common/PageTitle'
     import AboutUsStyleThree from '../components/Common/AboutUsStyleThree'
     import HistoryBegins from '../components/Common/HistoryBegins'

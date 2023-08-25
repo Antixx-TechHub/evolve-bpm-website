@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import NavbarStyleSeven from '../layouts/NavbarStyleSeven'
+import NavbarStyleSeven from '../layouts/Navbar'
 import MainBanner from '../components/HomeTweleve/MainBanner'
 import Services from '../components/HomeTweleve/Services'
 import About from '../components/HomeTweleve/About'
@@ -33,7 +33,7 @@ import CaseStudy from '../components/HomeTweleve/CaseStudy'
 import Pricing from '../components/HomeTweleve/Pricing'
 import Blog from '../components/HomeTweleve/Blog'
 import Subscribe from '../components/HomeTweleve/Subscribe'
-import FooterThree from '../layouts/FooterThree'
+import FooterThree from '../layouts/Footer'
 
 export default {
     components: {

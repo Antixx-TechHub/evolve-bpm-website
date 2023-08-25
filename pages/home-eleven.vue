@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import NavbarStyleSeven from '../layouts/NavbarStyleSeven'
+import NavbarStyleSeven from '../layouts/Navbar'
 import MainBanner from '../components/HomeEleven/MainBanner'
 import EasySolution from '../components/HomeEleven/EasySolution'
 import About from '../components/HomeEleven/About'
@@ -29,7 +29,7 @@ import Feedback from '../components/HomeEleven/Feedback'
 import Team from '../components/HomeEleven/Team'
 import ChooseUs from '../components/HomeEleven/ChooseUs'
 import OurBlog from '../components/HomeEleven/OurBlog'
-import FooterThree from '../layouts/FooterThree'
+import FooterThree from '../layouts/Footer'
 
 export default {
     components: {

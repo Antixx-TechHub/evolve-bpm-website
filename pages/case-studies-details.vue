@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+import NavbarStyleTwo from '../layouts/Navbar'
 import PageTitle from '../components/CaseStudiesDetails/PageTitle'
 import CaseStudiesDetails from '../components/CaseStudiesDetails/CaseStudiesDetails'
-import FooterTwo from '../layouts/FooterTwo'
+import FooterTwo from '../layouts/Footer'
 
 export default {
     name: 'CaseStudiesDetailsPage',

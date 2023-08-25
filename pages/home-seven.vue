@@ -20,7 +20,7 @@
 
 <script>
     import TopHeader from '../layouts/TopHeader'
-    import NavbarStyleSix from '../layouts/NavbarStyleSix'
+    import NavbarStyleSix from '../layouts/Navbar'
     import MainBanner from '../components/HomeSeven/MainBanner'
     import FeaturedServices from '../components/Common/FeaturedServices'
     import AboutUs from '../components/Common/AboutUs'

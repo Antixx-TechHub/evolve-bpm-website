@@ -18,7 +18,7 @@
 </template>
 
 <script>
-    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+    import NavbarStyleTwo from '../layouts/Navbar'
     import MainBanner from '../components/HomeTwo/MainBanner'
     import ServicesContant from '../components/HomeTwo/ServicesContant'
     import AboutUsStyleTwo from '../components/Common/AboutUsStyleTwo'

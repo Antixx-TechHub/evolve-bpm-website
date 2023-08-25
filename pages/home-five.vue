@@ -18,7 +18,7 @@
 </template>
 
 <script>
-    import NavbarStyleThree from '../layouts/NavbarStyleThree'
+    import NavbarStyleThree from '../layouts/Navbar'
     import MainBanner from '../components/HomeFive/MainBanner'
     import FeaturedServices from '../components/Common/FeaturedServices'
     import AboutUsStyleThree from '../components/Common/AboutUsStyleThree'

@@ -10,12 +10,12 @@
 </template>
 
 <script>
-    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+    import NavbarStyleTwo from '../layouts/Navbar'
     import PageTitle from '../components/Common/PageTitle'
     import ContactInfo from '../components/ContactUs/ContactInfo'
     import ContactContent from '../components/ContactUs/ContactContent'
     import Map from '../components/ContactUs/Map'
-    import FooterTwo from '../layouts/FooterTwo'
+    import FooterTwo from '../layouts/Footer'
 
     export default {
         components: {

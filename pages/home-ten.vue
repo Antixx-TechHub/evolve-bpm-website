@@ -20,7 +20,7 @@
 </template>
 
 <script>
-    import NavbarStyleSix from '../layouts/NavbarStyleSix'
+    import NavbarStyleSix from '../layouts/Navbar'
     import MainBanner from '../components/HomeTen/MainBanner'
     import CheckOurServices from '../components/HomeTen/CheckOurServices'
     import Overview from '../components/HomeTen/Overview'
@@ -35,7 +35,7 @@
     import Partner from '../components/HomeTen/Partner'
     import LatestBlog from '../components/HomeTen/LatestBlog'
     import OurNewsletter from '../components/HomeTen/OurNewsletter'
-    import FooterTwo from '../layouts/FooterTwo'
+    import FooterTwo from '../layouts/Footer'
 
     export default {
         components: {

@@ -18,7 +18,7 @@
 </template>
 
 <script>
-    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+    import NavbarStyleTwo from '../layouts/Navbar'
     import MainBanner from '../components/HomeEight/MainBanner'
     import Features from '../components/HomeEight/Features'
     import AboutUs from '../components/HomeEight/AboutUs'
@@ -31,7 +31,7 @@
     import OurClientsAreSaying from '../components/HomeEight/OurClientsAreSaying'
     import LatestBlog from '../components/HomeEight/LatestBlog'
     import OurNewsletter from '../components/HomeEight/OurNewsletter'
-    import FooterTwo from '../layouts/FooterTwo'
+    import FooterTwo from '../layouts/Footer'
 
     export default {
         components: {

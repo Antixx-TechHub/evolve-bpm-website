@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import NavbarStyleTwo from '../../../layouts/NavbarStyleTwo';
+import NavbarStyleTwo from '../../../layouts/Navbar';
 import PageTitle from '../../../components/Common/PageTitle';
 import BlogDetails from '../../../components/BlogTwo/BlogDetails'
-import FooterTwo from '../../../layouts/FooterTwo'
+import FooterTwo from '../../../layouts/Footer'
 import axios from 'axios';
 
 export default {

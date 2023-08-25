@@ -19,7 +19,7 @@
 </template>
 
 <script>
-    import NavbarStyleSix from '../layouts/NavbarStyleSix'
+    import NavbarStyleSix from '../layouts/Navbar'
     import MainBanner from '../components/HomeNine/MainBanner'
     import Features from '../components/Common/Features'
     import AboutUs from '../components/HomeNine/AboutUs'
@@ -33,7 +33,7 @@
     import GetStarted from '../components/HomeNine/GetStarted'
     import OurClientsAreSaying from '../components/HomeNine/OurClientsAreSaying'
     import LatestBlog from '../components/HomeNine/LatestBlog'
-    import FooterTwo from '../layouts/FooterTwo'
+    import FooterTwo from '../layouts/Footer'
 
     export default {
         components: {

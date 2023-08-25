@@ -8,10 +8,10 @@
 </template>
 
 <script>
-    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+    import NavbarStyleTwo from '../layouts/Navbar'
     import PageTitle from '../components/Common/PageTitle'
     import TeamContentTwo from '../components/TeamTwo/TeamContentTwo'
-    import FooterTwo from '../layouts/FooterTwo'
+    import FooterTwo from '../layouts/Footer'
 
     export default {
         components: {

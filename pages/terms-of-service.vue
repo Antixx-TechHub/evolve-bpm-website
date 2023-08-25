@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+    import NavbarStyleTwo from '../layouts/Navbar'
     import PageTitle from '../components/Common/PageTitle'
     import TermsOfServiceContent from '../components/TermsOfService/TermsOfServiceContent'
     import Footer from '../layouts/Footer'
