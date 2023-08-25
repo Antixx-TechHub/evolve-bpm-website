@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NavbarStyleFour />
+        <NavbarStyleTwo />
         <PageTitle pageTitle="Terms Of Service" />
         <TermsOfServiceContent />
         <Footer />
@@ -8,14 +8,14 @@
 </template>
 
 <script>
-    import NavbarStyleFour from '../layouts/NavbarStyleFour'
+    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
     import PageTitle from '../components/Common/PageTitle'
     import TermsOfServiceContent from '../components/TermsOfService/TermsOfServiceContent'
     import Footer from '../layouts/Footer'
 
     export default {
         components: {
-            NavbarStyleFour,
+            NavbarStyleTwo,
             PageTitle,
             TermsOfServiceContent,
             Footer,

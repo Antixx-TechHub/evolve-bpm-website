@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NavbarStyleFour />
+        <NavbarStyleTwo />
         <PageTitle pageTitle="About Us" />
         <AboutUsStyleThree class="pt-100" />
         <HistoryBegins />
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-    import NavbarStyleFour from '../layouts/NavbarStyleFour'
+    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
     import PageTitle from '../components/Common/PageTitle'
     import AboutUsStyleThree from '../components/Common/AboutUsStyleThree'
     import HistoryBegins from '../components/Common/HistoryBegins'
@@ -23,7 +23,7 @@
 
     export default {
         components: {
-            NavbarStyleFour,
+            NavbarStyleTwo,
             PageTitle,
             AboutUsStyleThree,
             HistoryBegins,

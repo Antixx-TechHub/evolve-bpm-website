@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NavbarStyleFour />
+        <NavbarStyleTwo />
         <PageTitle pageTitle="Privacy Policy" />
         <PrivacyPolicyContent />
         <Footer />
@@ -8,14 +8,14 @@
 </template>
 
 <script>
-    import NavbarStyleFour from '../layouts/NavbarStyleFour'
+    import NNavbarStyleTwo from '../layouts/NavbarStyleTwo'
     import PageTitle from '../components/Common/PageTitle'
     import PrivacyPolicyContent from '../components/PrivacyPolicy/PrivacyPolicyContent'
     import Footer from '../layouts/Footer'
 
     export default {
         components: {
-            NavbarStyleFour,
+            NavbarStyleTwo,
             PageTitle,
             PrivacyPolicyContent,
             Footer,
