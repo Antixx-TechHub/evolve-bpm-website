@@ -1,27 +1,27 @@
 <template>
     <div>
-        <NavbarStyleFour />
+        <NavbarStyleTwo />
         <PageTitle pageTitle="Portfolio Details" />
         <PortfolioDetailsContent />
         <MoreProjects />
-        <Footer />
+        <FooterTwo />
     </div>
 </template>
 
 <script>
-    import NavbarStyleFour from '../layouts/NavbarStyleFour'
+    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
     import PageTitle from '../components/Common/PageTitle'
     import PortfolioDetailsContent from '../components/PortfolioDetails/PortfolioDetailsContent'
     import MoreProjects from '../components/PortfolioDetails/MoreProjects'
-    import Footer from '../layouts/Footer'
+    import FooterTwo from '../layouts/FooterTwo'
 
     export default {
         components: {
-            NavbarStyleFour,
+            NavbarStyleTwo,
             PageTitle,
             PortfolioDetailsContent,
             MoreProjects,
-            Footer,
+            FooterTwo,
         }
     }
 </script>

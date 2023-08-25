@@ -1,30 +1,30 @@
 <template>
     <div>
-        <NavbarStyleFour />
+        <NavbarStyleTwo/>
         <PageTitle pageTitle="Contact Us" />
         <ContactInfo />
         <ContactContent />
         <Map />
-        <Footer />
+        <FooterTwo/>
     </div>
 </template>
 
 <script>
-    import NavbarStyleFour from '../layouts/NavbarStyleFour'
+    import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
     import PageTitle from '../components/Common/PageTitle'
     import ContactInfo from '../components/ContactUs/ContactInfo'
     import ContactContent from '../components/ContactUs/ContactContent'
     import Map from '../components/ContactUs/Map'
-    import Footer from '../layouts/Footer'
+    import FooterTwo from '../layouts/FooterTwo'
 
     export default {
         components: {
-            NavbarStyleFour,
+            NavbarStyleTwo,
             PageTitle,
             ContactInfo,
             ContactContent,
             Map,
-            Footer,
+            FooterTwo,
         }
     }
 </script>
