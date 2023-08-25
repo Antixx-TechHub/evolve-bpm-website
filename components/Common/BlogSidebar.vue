@@ -14,8 +14,21 @@
 
         <div class="widget widget_posts_thumb">
             <h3 class="widget-title">Popular Posts</h3>
+                <article class="item" v-for="blog in blogs.slice(0, 3)" :key="blog.id">
+                    <router-link :to="'/blog-details/' + blog.attributes.slug" class="thumb">
+                        <img :src="blog.attributes.image.data.attributes.url" alt="blog">
+                    </router-link>
+                    <div class="info">
+                        <time datetime="2022-06-30">{{ blog.attributes.date }}</time>
+                        <h4 class="title usmall">
+                            <router-link :to="'/blog-details/' + blog.attributes.slug">
+                                {{ blog.attributes.title }}
+                            </router-link>
+                        </h4>
+                    </div>
+                </article>
 
-            <article class="item">
+            <!-- <article class="item">
                 <NuxtLink to="/blog-details-one" class="thumb">
                     <span class="fullimage cover bg1" role="img"></span>
                 </NuxtLink>
@@ -55,19 +68,25 @@
                 </div>
 
                 <div class="clear"></div>
-            </article>
+            </article> -->
         </div>
 
         <div class="widget widget_categories">
             <h3 class="widget-title">Categories</h3>
-
             <ul>
+                <li v-for="blogcategory in blogcategories" :key="blogcategory.id">
+                    <router-link :to="`/category-details/${blogcategory.attributes.slug}`">
+                        {{ blogcategory.attributes.name }}</router-link>
+                </li>
+            </ul>
+
+            <!-- <ul>
                 <li><a href="/blog-one">Design <span class="post-count">(03)</span></a></li>
                 <li><a href="/blog-one">Lifestyle <span class="post-count">(05)</span></a></li>
                 <li><a href="/blog-one">Script <span class="post-count">(10)</span></a></li>
                 <li><a href="/blog-one">Device <span class="post-count">(08)</span></a></li>
                 <li><a href="/blog-one">Tips <span class="post-count">(01)</span></a></li>
-            </ul>
+            </ul> -->
         </div>
 
         <div class="widget widget_tag_cloud">
@@ -165,7 +184,26 @@
 
 <script>
 
+import axios from 'axios'
+
 export default {
-    name: 'BlogSidebar'
+    name: 'BlogSidebar',
+    data() {
+        return {
+            blogcategories: [],
+            blogs: [],
+        }
+    },
+    created: async function () {
+        axios.get('https://evolvestrapi.pbwebvision.in/api/blogs?populate=*')
+            .then(response => {
+                this.blogs = response.data.data.sort((b, a) => a.id - b.id);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/blog-categories')
+        this.blogcategories = response.data.data.sort((b, a) => a.id - b.id);
+    },
 }
 </script>
