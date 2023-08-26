@@ -62,7 +62,11 @@
                                     <li class="nav-item">
                                         <NuxtLink to="/blog-details-one" class="nav-link">Single Post</NuxtLink>
                                     </li>
+                                    <li class="nav-item">
+                                        <NuxtLink to="/glossaries" class="nav-link">Glossaries</NuxtLink>
+                                    </li>
                                 </ul>
+
                             </li>
 
                             <li class="nav-item">
