@@ -65,6 +65,9 @@
                                     <li class="nav-item">
                                         <NuxtLink to="/glossaries" class="nav-link">Glossaries</NuxtLink>
                                     </li>
+                                    <li class="nav-item">
+                                        <NuxtLink to="/success-stories" class="nav-link">Success Story</NuxtLink>
+                                    </li>
                                 </ul>
 
                             </li>
