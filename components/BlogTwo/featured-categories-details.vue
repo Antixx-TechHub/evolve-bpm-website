@@ -42,8 +42,7 @@ export default {
     data: function () {
         return {
             details: this.detailsContent,
-            featuredcategory: [],
-        }
+            categories: [],        }
     },
 }
 </script>
