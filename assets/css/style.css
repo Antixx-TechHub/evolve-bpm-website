@@ -8656,6 +8656,10 @@ Pagination CSS
   background-color: var(--mainColor);
 }
 
+.pagination-area .nav-links ul {
+display: contents;
+}
+
 .pagination-area .page-numbers i {
   position: relative;
   top: 1.5px;
