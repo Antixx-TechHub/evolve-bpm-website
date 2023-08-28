@@ -13,20 +13,20 @@
         </div>
 
         <div class="widget widget_posts_thumb">
-            <!-- <h3 class="widget-title">Popular Posts</h3>
-                <article class="item" v-for="blog in blogs.slice(0, 3)" :key="blog.id">
-                    <router-link :to="'/blog-details/' + blog.attributes.slug" class="thumb">
-                        <img :src="blog.attributes.image.data.attributes.url" alt="blog">
+            <h3 class="widget-title">Popular Posts</h3>
+                <article class="item" v-for="glossary in glossaries.slice(0, 3)" :key="glossary.id">
+                    <router-link :to="'/glossary-details/' + glossary.attributes.slug" class="thumb">
+                        <img :src="glossary.attributes.image.data.attributes.url" alt="blog">
                     </router-link>
                     <div class="info">
-                        <time datetime="2022-06-30">{{ blog.attributes.date }}</time>
+                        <time datetime="2022-06-30">{{ glossary.attributes.date }}</time>
                         <h4 class="title usmall">
-                            <router-link :to="'/blog-details/' + blog.attributes.slug">
-                                {{ blog.attributes.title }}
+                            <router-link :to="'/glossary-details/' + glossary.attributes.slug">
+                                {{ glossary.attributes.title }}
                             </router-link>
                         </h4>
                     </div>
-                </article> -->
+                </article>
 
             <!-- <article class="item">
                 <NuxtLink to="/blog-details-one" class="thumb">
@@ -88,97 +88,7 @@
                 <li><a href="/blog-one">Tips <span class="post-count">(01)</span></a></li>
             </ul> -->
         </div>
-
-        <div class="widget widget_tag_cloud">
-            <h3 class="widget-title">Popular Tags</h3>
-
-            <div class="tagcloud">
-                <a href="/blog-one">Business <span class="tag-link-count"> (3)</span></a>
-                <a href="/blog-one">Design <span class="tag-link-count"> (3)</span></a>
-                <a href="/blog-one">Aike <span class="tag-link-count"> (2)</span></a>
-                <a href="/blog-one">Fashion <span class="tag-link-count"> (2)</span></a>
-                <a href="/blog-one">Travel <span class="tag-link-count"> (1)</span></a>
-                <a href="/blog-one">Smart <span class="tag-link-count"> (1)</span></a>
-                <a href="/blog-one">Marketing <span class="tag-link-count"> (1)</span></a>
-                <a href="/blog-one">Tips <span class="tag-link-count"> (2)</span></a>
-            </div>
-        </div>
-
-        <div class="widget widget_instagram">
-            <ul>
-                <li>
-                    <div class="box">
-                        <img src="~/assets/images/team/team-img1.jpg" alt="image">
-                        <i class="bx bxl-instagram"></i>
-                        <a href="https://www.instagram.com/" target="_blank" class="link-btn"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="box">
-                        <img src="~/assets/images/team/team-img2.jpg" alt="image">
-                        <i class="bx bxl-instagram"></i>
-                        <a href="https://www.instagram.com/" target="_blank" class="link-btn"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="box">
-                        <img src="~/assets/images/team/team-img3.jpg" alt="image">
-                        <i class="bx bxl-instagram"></i>
-                        <a href="https://www.instagram.com/" target="_blank" class="link-btn"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="box">
-                        <img src="~/assets/images/team/team-img4.jpg" alt="image">
-                        <i class="bx bxl-instagram"></i>
-                        <a href="https://www.instagram.com/" target="_blank" class="link-btn"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="box">
-                        <img src="~/assets/images/team/team-img5.jpg" alt="image">
-                        <i class="bx bxl-instagram"></i>
-                        <a href="https://www.instagram.com/" target="_blank" class="link-btn"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="box">
-                        <img src="~/assets/images/team/team-img6.jpg" alt="image">
-                        <i class="bx bxl-instagram"></i>
-                        <a href="https://www.instagram.com/" target="_blank" class="link-btn"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="box">
-                        <img src="~/assets/images/team/team-img7.jpg" alt="image">
-                        <i class="bx bxl-instagram"></i>
-                        <a href="https://www.instagram.com/" target="_blank" class="link-btn"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="box">
-                        <img src="~/assets/images/team/team-img8.jpg" alt="image">
-                        <i class="bx bxl-instagram"></i>
-                        <a href="https://www.instagram.com/" target="_blank" class="link-btn"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="box">
-                        <img src="~/assets/images/team/team-img9.jpg" alt="image">
-                        <i class="bx bxl-instagram"></i>
-                        <a href="https://www.instagram.com/" target="_blank" class="link-btn"></a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        
     </div>
 </template>
 
@@ -190,12 +100,20 @@ export default {
     name: 'GlossarySidebar',
     data() {
         return {
-            glossarycategories: []
+            glossarycategories: [],
+            glossaries :[],
         }
     },
     created: async function () {
-        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/glossary-categories?populate=*')
-        this.glossarycategories = response.data.data
+        axios.get('https://evolvestrapi.pbwebvision.in/api/glossaries?populate=*')
+            .then(response => {
+                this.glossaries = response.data.data.sort((b, a) => a.id - b.id);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/glossary-categories')
+        this.glossarycategories = response.data.data.sort((b, a) => a.id - b.id);
     },
 }
 </script>

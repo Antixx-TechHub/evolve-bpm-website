@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <PageTitle pageTitle="Glossary Category" pageDesc="" />
+    <PageTitle pageTitle="Glossary Categories" pageDesc="" />
     <div v-if="successcategory !== null">
       <GlossaryCategoriesDetails v-bind:detailsContent="successcategory" />
     </div>
