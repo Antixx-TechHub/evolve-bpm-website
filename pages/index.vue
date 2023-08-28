@@ -10,8 +10,6 @@
         <CaseStudy />
         <Partner />
         <OurTeam />
-        <Video />
-        <Pricing />
         <OurClientsAreSaying />
         <LatestBlog />
         <OurNewsletter />
@@ -30,8 +28,6 @@ import BookAppointment from '../components/HomeEight/BookAppointment'
 import CaseStudy from '../components/HomeEight/CaseStudy'
 import Partner from '../components/HomeEight/Partner'
 import OurTeam from '../components/HomeEight/OurTeam'
-import Video from '../components/HomeEight/Video'
-import Pricing from '../components/HomeEight/Pricing'
 import OurClientsAreSaying from '../components/HomeEight/OurClientsAreSaying'
 import LatestBlog from '../components/HomeEight/LatestBlog'
 import OurNewsletter from '../components/HomeEight/OurNewsletter'
@@ -49,8 +45,6 @@ export default {
         CaseStudy,
         Partner,
         OurTeam,
-        Video,
-        Pricing,
         OurClientsAreSaying,
         LatestBlog,
         OurNewsletter,

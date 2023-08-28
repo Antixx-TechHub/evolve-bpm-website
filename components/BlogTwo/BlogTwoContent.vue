@@ -2,9 +2,7 @@
     <section class="blog-area bg-f9f9f9 ptb-100">
         <div class="container">
             <div class="section-title-with-large-box">
-                <span>
-                    <h2>Our Latest Blog</h2>
-                </span>
+                <span><h2>Our Latest Blog</h2></span>
             </div>
             <div class="row" v-if="blogs !== []">
                 <div class="col-lg-4 col-md-6" v-for="blog in blogs.slice(
