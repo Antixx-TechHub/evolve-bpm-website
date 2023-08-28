@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar/>
+        <Navbar />
         <PageTitle v-if="details !== null" :pageTitle="details[0].attributes.title" pageDesc="" />
         <div v-if="details !== null">
             <GlossaryDetails v-bind:detailsContent="details" />

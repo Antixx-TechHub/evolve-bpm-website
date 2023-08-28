@@ -8,10 +8,10 @@
                             <router-link :to="'/success-stories-details/' + successstory.attributes.slug" class="d-block">
                                 <img :src="successstory?.attributes?.image?.data?.attributes?.url" alt="blog">
                             </router-link>
-                            <div class="date">
+                            <!-- <div class="date">
                                 <i class='bx bx-calendar'></i>
                                 {{ successstory.attributes.date }}
-                            </div>
+                            </div> -->
                         </div>
                         <div class="post-content">
                             <h3>

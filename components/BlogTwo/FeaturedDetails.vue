@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                    <FeaturedSidebar/>
+                    <FeaturedSidebar />
                 </div>
             </div>
         </div>
