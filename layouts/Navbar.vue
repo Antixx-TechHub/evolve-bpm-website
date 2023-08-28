@@ -59,9 +59,9 @@
                             <li class="nav-item">
                                 <NuxtLink to="/blogs" class="nav-link">Blog</NuxtLink>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <NuxtLink to="/blog-details-one" class="nav-link">Single Post</NuxtLink>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-item">
                                         <NuxtLink to="/glossaries" class="nav-link">Glossaries</NuxtLink>
                                     </li>

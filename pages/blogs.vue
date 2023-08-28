@@ -1,7 +1,7 @@
 <template>
     <div>
         <NavbarStyleTwo />
-        <PageTitle pageTitle="Blog Grid (3 in Row)" />
+        <PageTitle pageTitle="Blogs" />
         <FeaturedBlogMain />
         <BlogTwoContent />
         <FooterTwo/>
