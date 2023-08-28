@@ -1,52 +1,19 @@
 <template>
-    <div class="rivate-partner-area">
+    <div class="it-partner-area pb-75">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                    <div class="rivate-partner-item">
-                        <div class="image">
-                            <img src="~/assets/images/more-home/partner/partner-1.png" alt="image">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                    <div class="rivate-partner-item">
-                        <div class="image">
-                            <img src="~/assets/images/more-home/partner/partner-2.png" alt="image">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                    <div class="rivate-partner-item">
-                        <div class="image">
-                            <img src="~/assets/images/more-home/partner/partner-3.png" alt="image">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                    <div class="rivate-partner-item">
-                        <div class="image">
-                            <img src="~/assets/images/more-home/partner/partner-4.png" alt="image">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                    <div class="rivate-partner-item">
-                        <div class="image">
-                            <img src="~/assets/images/more-home/partner/partner-5.png" alt="image">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6 col-sm-4 col-md-4">
-                    <div class="rivate-partner-item">
-                        <div class="image">
-                            <img src="~/assets/images/more-home/partner/partner-6.png" alt="image">
-                        </div>
+                <div class="col-lg-12 col-6 col-sm-4 col-md-4">
+                    <div class="it-partner-item">
+                        <carousel :autoplay="true" :loop="true" :paginationEnabled="false"
+                            :perPageCustom="[[0, 3], [576, 3], [768, 3], [1200, 7]]" v-if="partners !== null">
+                            <slide v-for="slide in partners.partnerSlides" :key="slide.id">
+                                <div class="single-partner-item">
+                                    <a>
+                                        <img :src="slide.image.data.attributes.url" alt="image">
+                                    </a>
+                                </div>
+                            </slide>
+                        </carousel>
                     </div>
                 </div>
             </div>
@@ -55,7 +22,22 @@
 </template>
 
 <script>
+
+import axios from 'axios'
+
 export default {
-    name: 'Partner'
+    name: 'Partner',
+    data: () => ({
+        settings: {
+            itemsToShow: 1,
+            snapAlign: 'center',
+        },
+        partners: null,
+    }),
+    created: async function () {
+        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/partner?populate=partnerSlides.image')
+        const { data: { attributes } } = response.data
+        this.partners = attributes
+    },
 }
 </script>

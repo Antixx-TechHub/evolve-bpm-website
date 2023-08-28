@@ -7,111 +7,20 @@
             </div>
 
             <div class="rivate-clients-slides owl-carousel owl-theme">
-                <carousel
-                    :autoplay="true"
-                    :loop="true"
-                    :autoplayTimeout="7000"
-                    :speed="1000"
-                    :paginationEnabled="true"
-                    :perPageCustom="[[0, 1], [576, 2], [768, 2], [1024, 3], [1200, 3]]"
-                >
-                    <slide>
+                <carousel :autoplay="true" :loop="true" :autoplayTimeout="5000" :speed="1000" :paginationEnabled="true"
+                    :perPageCustom="[[0, 1], [576, 2], [768, 2], [1024, 3], [1200, 3]]" v-if="customerreviews !== null">
+                    <slide v-for="customerreview in customerreviews.singleFeedbacks" :key="customerreview.id">
                         <div class="rivate-clients-card">
                             <div class="client-info">
                                 <div class="d-flex align-items-center">
-                                    <img src="~/assets/images/more-home/clients/clients-1.png" alt="image">
+                                    <img :src="customerreview.media.data.attributes.url" alt="Testimonials">
                                     <div class="title">
-                                        <h3>John Smith</h3>
-                                        <span>Python Developer</span>
+                                        <h3>{{ customerreview.name }}</h3>
+                                        <span>{{ customerreview.designation }}</span>
                                     </div>
                                 </div>
                             </div>
-                            <p>“Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Donec velit neque auctor sit amet aliquam vel ullamcorper sit amet ligula donec rutrum congue leo eget malesuada.”</p>
-                            <div class="icon">
-                                <i class="flaticon-quote"></i>
-                            </div>
-                        </div>
-                    </slide>
-                    <slide>
-                        <div class="rivate-clients-card">
-                            <div class="client-info">
-                                <div class="d-flex align-items-center">
-                                    <img src="~/assets/images/more-home/clients/clients-2.png" alt="image">
-                                    <div class="title">
-                                        <h3>Sarah Taylor</h3>
-                                        <span>Marketing Lead</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>“Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Donec velit neque auctor sit amet aliquam vel ullamcorper sit amet ligula donec rutrum congue leo eget malesuada.”</p>
-                            <div class="icon">
-                                <i class="flaticon-quote"></i>
-                            </div>
-                        </div>
-                    </slide>
-                    <slide>
-                        <div class="rivate-clients-card">
-                            <div class="client-info">
-                                <div class="d-flex align-items-center">
-                                    <img src="~/assets/images/more-home/clients/clients-3.png" alt="image">
-                                    <div class="title">
-                                        <h3>David Warner</h3>
-                                        <span>Support</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>“Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Donec velit neque auctor sit amet aliquam vel ullamcorper sit amet ligula donec rutrum congue leo eget malesuada.”</p>
-                            <div class="icon">
-                                <i class="flaticon-quote"></i>
-                            </div>
-                        </div>
-                    </slide>
-                    <slide>
-                        <div class="rivate-clients-card">
-                            <div class="client-info">
-                                <div class="d-flex align-items-center">
-                                    <img src="~/assets/images/more-home/clients/clients-1.png" alt="image">
-                                    <div class="title">
-                                        <h3>John Smith</h3>
-                                        <span>Python Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>“Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Donec velit neque auctor sit amet aliquam vel ullamcorper sit amet ligula donec rutrum congue leo eget malesuada.”</p>
-                            <div class="icon">
-                                <i class="flaticon-quote"></i>
-                            </div>
-                        </div>
-                    </slide>
-                    <slide>
-                        <div class="rivate-clients-card">
-                            <div class="client-info">
-                                <div class="d-flex align-items-center">
-                                    <img src="~/assets/images/more-home/clients/clients-2.png" alt="image">
-                                    <div class="title">
-                                        <h3>Sarah Taylor</h3>
-                                        <span>Marketing Lead</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>“Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Donec velit neque auctor sit amet aliquam vel ullamcorper sit amet ligula donec rutrum congue leo eget malesuada.”</p>
-                            <div class="icon">
-                                <i class="flaticon-quote"></i>
-                            </div>
-                        </div>
-                    </slide>
-                    <slide>
-                        <div class="rivate-clients-card">
-                            <div class="client-info">
-                                <div class="d-flex align-items-center">
-                                    <img src="~/assets/images/more-home/clients/clients-3.png" alt="image">
-                                    <div class="title">
-                                        <h3>David Warner</h3>
-                                        <span>Support</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>“Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Donec velit neque auctor sit amet aliquam vel ullamcorper sit amet ligula donec rutrum congue leo eget malesuada.”</p>
+                            <p>{{ customerreview.shortDec }}</p>
                             <div class="icon">
                                 <i class="flaticon-quote"></i>
                             </div>
@@ -124,7 +33,20 @@
 </template>
 
 <script>
+
+import axios from 'axios'
+
 export default {
-    name: 'OurClientsAreSaying'
+    name: 'OurClientsAreSaying',
+    data() {
+        return {
+            customerreviews: null,
+        }
+    },
+    created: async function () {
+        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/customerreview?populate=singleFeedbacks.media')
+        const { data: { attributes } } = response.data;
+        this.customerreviews = attributes
+    },
 }
 </script>

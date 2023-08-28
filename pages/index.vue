@@ -6,9 +6,11 @@
         <AboutUs />
         <WhatWeDo />
         <CheckOurServices />
+        <BookAppointment />
+        <CaseStudy />
+        <Partner />
         <OurTeam />
         <Video />
-        <Partner />
         <Pricing />
         <OurClientsAreSaying />
         <LatestBlog />
@@ -18,37 +20,41 @@
 </template>
 
 <script>
-    import NavbarStyleTwo from '../layouts/Navbar'
-    import MainBanner from '../components/HomeEight/MainBanner'
-    import Features from '../components/HomeEight/Features'
-    import AboutUs from '../components/HomeEight/AboutUs'
-    import WhatWeDo from '../components/HomeEight/WhatWeDo'
-    import CheckOurServices from '../components/HomeEight/CheckOurServices'
-    import OurTeam from '../components/HomeEight/OurTeam'
-    import Video from '../components/HomeEight/Video'
-    import Partner from '../components/HomeEight/Partner'
-    import Pricing from '../components/HomeEight/Pricing'
-    import OurClientsAreSaying from '../components/HomeEight/OurClientsAreSaying'
-    import LatestBlog from '../components/HomeEight/LatestBlog'
-    import OurNewsletter from '../components/HomeEight/OurNewsletter'
-    import FooterTwo from '../layouts/Footer'
+import NavbarStyleTwo from '../layouts/Navbar'
+import MainBanner from '../components/HomeEight/MainBanner'
+import Features from '../components/HomeEight/Features'
+import AboutUs from '../components/HomeEight/AboutUs'
+import WhatWeDo from '../components/HomeEight/WhatWeDo'
+import CheckOurServices from '../components/HomeEight/CheckOurServices'
+import BookAppointment from '../components/HomeEight/BookAppointment'
+import CaseStudy from '../components/HomeEight/CaseStudy'
+import Partner from '../components/HomeEight/Partner'
+import OurTeam from '../components/HomeEight/OurTeam'
+import Video from '../components/HomeEight/Video'
+import Pricing from '../components/HomeEight/Pricing'
+import OurClientsAreSaying from '../components/HomeEight/OurClientsAreSaying'
+import LatestBlog from '../components/HomeEight/LatestBlog'
+import OurNewsletter from '../components/HomeEight/OurNewsletter'
+import FooterTwo from '../layouts/Footer'
 
-    export default {
-        components: {
-            NavbarStyleTwo,
-            MainBanner,
-            Features,
-            AboutUs,
-            WhatWeDo,
-            CheckOurServices,
-            OurTeam,
-            Video,
-            Partner,
-            Pricing,
-            OurClientsAreSaying,
-            LatestBlog,
-            OurNewsletter,
-            FooterTwo,
-        }
+export default {
+    components: {
+        NavbarStyleTwo,
+        MainBanner,
+        Features,
+        AboutUs,
+        WhatWeDo,
+        CheckOurServices,
+        BookAppointment,
+        CaseStudy,
+        Partner,
+        OurTeam,
+        Video,
+        Pricing,
+        OurClientsAreSaying,
+        LatestBlog,
+        OurNewsletter,
+        FooterTwo,
     }
+}
 </script>
