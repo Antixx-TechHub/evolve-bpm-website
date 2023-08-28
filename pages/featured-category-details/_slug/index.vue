@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <PageTitle pageTitle="Featured Blog Category" pageDesc="" />
+    <PageTitle pageTitle="Featured Blog Categories" pageDesc="" />
     <div v-if="category !== null">
       <CategoryDetails v-bind:detailsContent="category" />
     </div>

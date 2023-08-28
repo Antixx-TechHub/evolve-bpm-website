@@ -89,7 +89,7 @@
             </ul> -->
         </div>
 
-        <div class="widget widget_tag_cloud">
+        <!-- <div class="widget widget_tag_cloud">
             <h3 class="widget-title">Popular Tags</h3>
 
             <div class="tagcloud">
@@ -178,7 +178,7 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </div>
 </template>
 

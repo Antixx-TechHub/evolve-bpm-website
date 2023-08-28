@@ -20,12 +20,12 @@
                                     {{ featuredblog.attributes.title }}
                                 </router-link>
                             </h3>
-                            <p>
+                            <!-- <p>
                                 {{ featuredblog.attributes.shortDesc }} <br>
                                 <NuxtLink :to="'/featured-blog-details/' + featuredblog.attributes.slug">
                                     {{ featuredblog.attributes.btnText }}
                                 </NuxtLink>
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </div>
