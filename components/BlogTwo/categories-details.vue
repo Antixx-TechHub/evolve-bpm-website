@@ -8,23 +8,23 @@
                             <router-link :to="'/blog-details/' + blog.attributes.slug" class="d-block">
                                 <img :src="blog?.attributes?.image?.data?.attributes?.url" alt="blog">
                             </router-link>
-                            <div class="date">
-                                <i class='bx bx-calendar'></i>
-                                {{ blog.attributes.date }}
-                            </div>
                         </div>
                         <div class="post-content">
+                            <div class="content">
                             <h3>
-                                <router-link :to="'/blog-details/' + blog.attributes.slug">
-                                    {{ blog.attributes.title }}
-                                </router-link>
-                            </h3>
-                            <p>
-                                {{ blog.attributes.shortDesc }} <br>
                                 <NuxtLink :to="'/blog-details/' + blog.attributes.slug">
-                                    {{ blog.attributes.btnText }}
+                                    {{ blog.attributes.title }}
                                 </NuxtLink>
-                            </p>
+                            </h3>
+                            <p>{{ blog.attributes.shortDesc }}</p>
+                            <div class="d-flex align-items-center">
+                                <img :src="blog.attributes.avtar.data.attributes.url" alt="blog">
+                                <div class="info">
+                                    <h5>{{ blog.attributes.author }}</h5>
+                                    <span>{{ blog.attributes.date }}</span>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>

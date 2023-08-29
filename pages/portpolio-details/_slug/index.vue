@@ -30,7 +30,7 @@ export default {
     },
     created: async function () {
         const { slug } = this.$route.params
-        const reaponse = await axios.get(`http://localhost:1341/api/portfolios?filters[slug][$eq]=${slug}&populate=*`, { params: { slug } })
+        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/portfolios?filters[slug][$eq]=${slug}&populate=*`, { params: { slug } })
         this.details = reaponse.data.data.sort((b, a) => a.id - b.id);
     },
 };

@@ -62,7 +62,7 @@ export default {
         }
     },
     created: async function () {
-        const response = await axios.get('http://localhost:1337/api/blogs?populate=*')
+        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/blogs?populate=*')
         this.blogs = response.data.data;
         this.rows = this.blogs?.length;
     },

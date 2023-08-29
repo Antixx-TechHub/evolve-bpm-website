@@ -195,14 +195,14 @@ export default {
         }
     },
     created: async function () {
-        axios.get('http://localhost:1337/api/case-studies?populate=*')
+        axios.get('https://evolvestrapi.pbwebvision.in/api/case-studies?populate=*')
             .then(response => {
                 this.casestudies = response.data.data.sort((b, a) => a.id - b.id);
             })
             .catch(error => {
                 console.error(error);
             });
-        const response = await axios.get('http://localhost:1337/api/case-study-categories')
+        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/case-study-categories')
         this.casestudiescategories = response.data.data.sort((b, a) => a.id - b.id);
     },
 }
