@@ -10,13 +10,20 @@
                                 <img :src="glossary?.attributes?.image?.data?.attributes?.url" alt="blog">
                             </router-link>
                         </div>
-                        <div class="post-content">
+                        <div class="content">
                             <h3>
-                                <router-link :to="'/glossary-details/' + glossary.attributes.slug">
+                                <NuxtLink :to="'/glossary-details/' + glossary.attributes.slug">
                                     {{ glossary.attributes.title }}
-                                </router-link>
+                                </NuxtLink>
                             </h3>
                             <p>{{ glossary.attributes.shortDesc }}</p>
+                            <div class="d-flex align-items-center">
+                                <img :src="glossary.attributes.avtar.data.attributes.url" alt="blog">
+                                <div class="info">
+                                    <h5>{{ glossary.attributes.author }}</h5>
+                                    <span>{{ glossary.attributes.date }}</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

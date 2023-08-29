@@ -13,18 +13,20 @@
                                 {{ successstory.attributes.date }}
                             </div> -->
                         </div>
-                        <div class="post-content">
+                        <div class="content">
                             <h3>
-                                <router-link :to="'/success-stories-details/' + successstory.attributes.slug">
-                                    {{ successstory.attributes.title }}
-                                </router-link>
-                            </h3>
-                            <p>
-                                {{ successstory.attributes.shortDesc }} <br>
                                 <NuxtLink :to="'/success-stories-details/' + successstory.attributes.slug">
-                                    {{ successstory.attributes.btnText }}
+                                    {{ successstory.attributes.title }}
                                 </NuxtLink>
-                            </p>
+                            </h3>
+                            <p>{{ successstory.attributes.shortDesc }}</p>
+                            <div class="d-flex align-items-center">
+                                <img :src="successstory.attributes.avtar.data.attributes.url" alt="blog">
+                                <div class="info">
+                                    <h5>{{ successstory.attributes.author }}</h5>
+                                    <span>{{ successstory.attributes.date }}</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

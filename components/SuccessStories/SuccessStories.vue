@@ -12,18 +12,20 @@
                                 <img :src="successstory.attributes.image.data.attributes.url" alt="blog">
                             </NuxtLink>
                         </div>
-                        <div class="post-content">
+                        <div class="content">
                             <h3>
                                 <NuxtLink :to="'/success-stories-details/' + successstory.attributes.slug">
                                     {{ successstory.attributes.title }}
                                 </NuxtLink>
                             </h3>
-                            <p>
-                                {{ successstory.attributes.shortDesc }} <br>
-                                <NuxtLink :to="'/success-stories-details/' + successstory.attributes.slug">
-                                    {{ successstory.attributes.btnText }}
-                                </NuxtLink>
-                            </p>
+                            <p>{{ successstory.attributes.shortDesc }}</p>
+                            <div class="d-flex align-items-center">
+                                <img :src="successstory.attributes.avtar.data.attributes.url" alt="blog">
+                                <div class="info">
+                                    <h5>{{ successstory.attributes.author }}</h5>
+                                    <span>{{ successstory.attributes.date }}</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -53,7 +55,7 @@ export default {
         }
     },
     created: async function () {
-        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/successstories?populate=*')
+        const response = await axios.get('http://localhost:1337/api/successstories?populate=*')
         this.successstories = response.data.data.sort((b, a) => a.id - b.id);
         this.rows = this.successstories?.length;
     },
