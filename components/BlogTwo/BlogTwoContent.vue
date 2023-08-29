@@ -2,7 +2,9 @@
     <section class="blog-area bg-f9f9f9 ptb-100">
         <div class="container">
             <div class="section-title-with-large-box">
-                <span><h2>Our Latest Blog</h2></span>
+                <span>
+                    <h2>Our Latest Blog</h2>
+                </span>
             </div>
             <div class="row" v-if="blogs !== []">
                 <div class="col-lg-4 col-md-6" v-for="blog in blogs.slice(
@@ -24,10 +26,10 @@
                             </h3>
                             <p>{{ blog.attributes.shortDesc }}</p>
                             <div class="d-flex align-items-center">
-                                <img src="~/assets/images/user1.jpg" alt="image">
+                                <img :src="blog.attributes.avtar.data.attributes.url" alt="blog">
                                 <div class="info">
-                                    <h5>David Smith</h5>
-                                    <span>Jun 21, 2021</span>
+                                    <h5>{{ blog.attributes.author }}</h5>
+                                    <span>{{ blog.attributes.date }}</span>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +62,7 @@ export default {
         }
     },
     created: async function () {
-        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/blogs?populate=*')
+        const response = await axios.get('http://localhost:1337/api/blogs?populate=*')
         this.blogs = response.data.data;
         this.rows = this.blogs?.length;
     },

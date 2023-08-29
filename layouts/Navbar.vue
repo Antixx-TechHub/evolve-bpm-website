@@ -68,6 +68,9 @@
                                     <li class="nav-item">
                                         <NuxtLink to="/success-stories" class="nav-link">Success Story</NuxtLink>
                                     </li>
+                                    <li class="nav-item">
+                                        <NuxtLink to="/case-studies" class="nav-link">Case Study</NuxtLink>
+                                    </li>
                                 </ul>
 
                             </li>
