@@ -26,10 +26,10 @@
                             </h3>
                             <p>{{ featuredblog.attributes.shortDesc }}</p>
                             <div class="d-flex align-items-center">
-                                <img src="~/assets/images/user1.jpg" alt="image">
+                                <img :src="featuredblog.attributes.avtar.data.attributes.url" alt="blog">
                                 <div class="info">
-                                    <h5>David Smith</h5>
-                                    <span>Jun 21, 2021</span>
+                                    <h5>{{ featuredblog.attributes.author }}</h5>
+                                    <span>{{ featuredblog.attributes.date }}</span>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ export default {
         }
     },
     created: async function () {
-        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/featuredblogs?populate=*')
+        const response = await axios.get('http://localhost:1337/api/featuredblogs?populate=*')
         this.featuredblogs = response.data.data;
         this.rows = this.featuredblogs?.length;
     },

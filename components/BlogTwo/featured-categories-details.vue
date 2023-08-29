@@ -9,23 +9,21 @@
                             <router-link :to="'/featured-blog-details/' + featuredblog.attributes.slug" class="d-block">
                                 <img :src="featuredblog?.attributes?.image?.data?.attributes?.url" alt="blog">
                             </router-link>
-                            <div class="date">
-                                <i class='bx bx-calendar'></i>
-                                {{ featuredblog.attributes.date }}
-                            </div>
                         </div>
-                        <div class="post-content">
+                        <div class="content">
                             <h3>
-                                <router-link :to="'/featured-blog-details/' + featuredblog.attributes.slug">
-                                    {{ featuredblog.attributes.title }}
-                                </router-link>
-                            </h3>
-                            <!-- <p>
-                                {{ featuredblog.attributes.shortDesc }} <br>
                                 <NuxtLink :to="'/featured-blog-details/' + featuredblog.attributes.slug">
-                                    {{ featuredblog.attributes.btnText }}
+                                    {{ featuredblog.attributes.title }}
                                 </NuxtLink>
-                            </p> -->
+                            </h3>
+                            <p>{{ featuredblog.attributes.shortDesc }}</p>
+                            <div class="d-flex align-items-center">
+                                <img :src="featuredblog.attributes.avtar.data.attributes.url" alt="blog">
+                                <div class="info">
+                                    <h5>{{ featuredblog.attributes.author }}</h5>
+                                    <span>{{ featuredblog.attributes.date }}</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
