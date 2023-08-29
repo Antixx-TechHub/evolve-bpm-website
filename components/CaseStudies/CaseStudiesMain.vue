@@ -2,7 +2,9 @@
     <div class="blog-area pt-100 pb-75">
         <div class="container">
             <div class="section-title-with-large-box">
-                <span><h2>Our Latest Case Studies</h2></span>
+                <span>
+                    <h2>Our Latest Case Studies</h2>
+                </span>
             </div>
             <div class="row justify-content-center" v-if="casestudies !== []">
                 <div class="col-lg-4 col-md-6 justify-content-center" v-for="casestudy in casestudies.slice(
@@ -10,28 +12,26 @@
                     currentPage * perPage,
                 )" :key="casestudy.id">
                     <div class="single-blog-post">
-                        <div class="post-image">
+                        <div class="image">
                             <NuxtLink :to="'/case-studies-details/' + casestudy.attributes.slug" class="d-block">
                                 <img :src="casestudy.attributes.image.data.attributes.url" alt="blog">
                             </NuxtLink>
-                            <div class="date">
-                                <i class='bx bx-calendar'></i>
-                                {{ casestudy.attributes.date }}
-                            </div>
                         </div>
 
-                        <div class="post-content">
+                        <div class="content">
                             <h3>
                                 <NuxtLink :to="'/case-studies-details/' + casestudy.attributes.slug">
                                     {{ casestudy.attributes.title }}
                                 </NuxtLink>
                             </h3>
-                            <p>
-                                {{ casestudy.attributes.shortDesc }} <br>
-                                <NuxtLink :to="'/case-studies-details/' + casestudy.attributes.slug">
-                                    {{ casestudy.attributes.btnText }}
-                                </NuxtLink>
-                            </p>
+                            <p>{{ casestudy.attributes.shortDesc }}</p>
+                            <div class="d-flex align-items-center">
+                                <img :src="casestudy.attributes.avtar.data.attributes.url" alt="blog">
+                                <div class="info">
+                                    <h5>{{ casestudy.attributes.author }}</h5>
+                                    <span>{{ casestudy.attributes.date }}</span>
+                                </div>
+                            </div>
                         </div>
                         <!-- <div class="post-info">
                             <div class="post-by">
