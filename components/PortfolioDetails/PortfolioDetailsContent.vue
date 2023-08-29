@@ -6,7 +6,7 @@
                     <div class="portfolio-details-image">
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
-                                <img src="~/assets/images/portfolio/portfolio-img1.jpg" alt="image">
+                                <img :src="details[0].attributes.image.data.attributes.url" alt="image">
                             </div>
 
                             <div class="col-lg-6 col-md-6">
@@ -16,38 +16,14 @@
                     </div>
 
                     <div class="portfolio-details-desc">
-                        <span class="sub-title">Digital Marketing</span>
-                        <h3>Customer Satisfaction for a Digital Marketing Agency</h3>
-                        <p>Improve Machine Learning algorithms by studying underfitting, overfitting, training, validation, n-fold cross validation, testing, and how hyperparameters could improve performance. Perform linear and logistic regressions in Python.</p>
-
+                        <span v-html="details[0].attributes.longDesc"></span>
                         <div class="row align-items-center">
                             <div class="col-lg-6 col-md-6">
                                 <div class="image">
                                     <img src="~/assets/images/portfolio/portfolio-img3.jpg" alt="image">
                                 </div>
                             </div>
-
-                            <div class="col-lg-6 col-md-6">
-                                <div class="content">
-                                    <h3>Important Facts</h3>
-                                    <ul>
-                                        <li>The Field of Data Science</li>
-                                        <li>The Problem</li>
-                                        <li>The Solution</li>
-                                        <li>The Skills</li>
-                                        <li>Statistics</li>
-                                        <li>Mathematics</li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
-
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
-                        <h3>Results</h3>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna ad aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco labori.</p>
                     </div>
                 </div>
 
@@ -60,39 +36,79 @@
                                         <i class='bx bx-user-pin'></i>
                                     </div>
                                     <span>Client:</span>
-                                    <a href="https://envytheme.com/" target="_blank">EnvyTheme.com</a>
-                                    <a href="https://themeforest.net/" target="_blank">ThemeForest.com</a>
+                                    <!-- {{ portfolio.attributes.client }} -->
                                 </li>
                                 <li>
                                     <div class="icon">
                                         <i class='bx bx-map'></i>
                                     </div>
                                     <span>Location:</span>
-                                    New York, USA
+                                    <!-- {{ portfolio.attributes.location }} -->
                                 </li>
                                 <li>
                                     <div class="icon">
                                         <i class='bx bx-purchase-tag'></i>
                                     </div>
                                     <span>Technologies:</span>
-                                    Python, Data Science
+                                    <!-- {{ portfolio.attributes.technologies }} -->
                                 </li>
                                 <li>
                                     <div class="icon">
                                         <i class='bx bx-check'></i>
                                     </div>
                                     <span>Completed:</span>
-                                    28 April 2021
+                                    <!-- {{ portfolio.attributes.completed }} -->
                                 </li>
                                 <li>
                                     <div class="icon">
                                         <i class='bx bx-globe'></i>
                                     </div>
                                     <span>Website:</span>
-                                    <a href="https://envytheme.com/" target="_blank">EnvyTheme.com</a>
+                                    <!-- {{ portfolio.attributes.website }} -->
                                 </li>
                             </ul>
                         </div>
+
+                        <div class="comments-area">
+                            <div class="comment-respond">
+                                <h3 class="comment-reply-title">Leave a Reply</h3>
+
+                                <form class="comment-form">
+                                    <p class="comment-notes">
+                                        <span id="email-notes">Your email address will not be published.</span>
+                                        Required fields are marked
+                                        <span class="required">*</span>
+                                    </p>
+                                    <p class="comment-form-comment">
+                                        <label>Comment</label>
+                                        <textarea name="comment" id="comment" cols="45" rows="5" maxlength="65525"
+                                            required="required"></textarea>
+                                    </p>
+                                    <p class="comment-form-author">
+                                        <label>Name <span class="required">*</span></label>
+                                        <input type="text" id="author" name="author" required="required">
+                                    </p>
+                                    <p class="comment-form-email">
+                                        <label>Email <span class="required">*</span></label>
+                                        <input type="email" id="email" name="email" required="required">
+                                    </p>
+                                    <p class="comment-form-url">
+                                        <label>Website</label>
+                                        <input type="url" id="url" name="url">
+                                    </p>
+                                    <p class="comment-form-cookies-consent">
+                                        <input type="checkbox" value="yes" name="wp-comment-cookies-consent"
+                                            id="wp-comment-cookies-consent">
+                                        <label for="wp-comment-cookies-consent">Save my name, email, and website in this
+                                            browser for the next time I comment.</label>
+                                    </p>
+                                    <p class="form-submit">
+                                        <input type="submit" name="submit" id="submit" class="submit" value="Post Comment">
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -101,7 +117,15 @@
 </template>
 
 <script>
+
 export default {
-    name: 'PortfolioDetailsContent'
+    name: 'BlogDetails',
+
+    props: ['detailsContent'],
+    data: function () {
+        return {
+            details: this.detailsContent
+        }
+    }
 }
 </script>

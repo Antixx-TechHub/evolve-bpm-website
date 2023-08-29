@@ -26,10 +26,10 @@
                             </h3>
                             <p>{{ portfolio.attributes.shortDesc }}</p>
                             <div class="d-flex align-items-center">
-                                <!-- <img :src="blog.attributes.avtar.data.attributes.url" alt="blog"> -->
+                                <img :src="portfolio.attributes.avtar.data.attributes.url" alt="blog">
                                 <div class="info">
-                                    <!-- <h5>{{ blog.attributes.author }}</h5> -->
-                                    <span>{{ portfolio.attributes.date }}</span>
+                                    <h5>{{ portfolio.attributes.author }}</h5>
+                                    <span>{{ portfolio.attributes.completed }}</span>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ export default {
         }
     },
     created: async function () {
-        const response = await axios.get('http://localhost:1337/api/portfolios?populate=*')
+        const response = await axios.get('http://localhost:1341/api/portfolios?populate=*')
         this.portfolios = response.data.data;
         this.rows = this.portfolios?.length;
     },

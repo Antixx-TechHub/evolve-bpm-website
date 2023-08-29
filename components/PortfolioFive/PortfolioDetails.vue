@@ -1,15 +1,18 @@
 <template>
-    <div class="blog-details-area">
+    <div class="portfolio-details-area ptb-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-12">
-                    <div class="blog-details-desc">
-                        <div class="article-image">
-                            <img :src="details[0].attributes.image.data.attributes.url" alt="image">
+                    <div class="portfolio-details-image">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <img :src="details[0].attributes.image.data.attributes.url" alt="image">
+                            </div>
                         </div>
-                        <div class="article-content">
-                            <span v-html="details[0].attributes.longDesc"></span>
-                        </div>
+                    </div>
+
+                    <div class="portfolio-details-desc">
+                        <span v-html="details[0].attributes.longDesc"></span>
                         <div class="comments-area">
                             <div class="comment-respond">
                                 <h3 class="comment-reply-title">Leave a Reply</h3>
@@ -51,8 +54,49 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-12">
-                    <!-- <BlogSidebar /> -->
+                    <div class="portfolio-sidebar-sticky">
+                        <div class="portfolio-details-info">
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <i class='bx bx-user-pin'></i>
+                                    </div>
+                                    <span>Client:</span>
+                                    {{ details[0].attributes.client }}
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class='bx bx-map'></i>
+                                    </div>
+                                    <span>Location:</span>
+                                    {{ details[0].attributes.location }}
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class='bx bx-purchase-tag'></i>
+                                    </div>
+                                    <span>Technologies:</span>
+                                    {{ details[0].attributes.technologies }}
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class='bx bx-check'></i>
+                                    </div>
+                                    <span>Completed:</span>
+                                    {{ details[0].attributes.completed }}
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class='bx bx-globe'></i>
+                                    </div>
+                                    <span>Website:</span>
+                                    {{ details[0].attributes.website }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,13 +104,10 @@
 </template>
 
 <script>
-import BlogSidebar from '../Common/BlogSidebar'
 
 export default {
     name: 'BlogDetails',
-    components: {
-        BlogSidebar
-    },
+
     props: ['detailsContent'],
     data: function () {
         return {
