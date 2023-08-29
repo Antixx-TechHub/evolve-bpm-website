@@ -1,109 +1,70 @@
 <template>
-    <div class="portfolio-area ptb-100">
+    <section class="blog-area bg-f9f9f9 ptb-100">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-portfolio-box">
-                        <NuxtLink to="/portfolio-details" class="image d-block">
-                            <img src="~/assets/images/portfolio/portfolio-img1.jpg" alt="image">
-                        </NuxtLink>
-
-                        <div class="content">
-                            <h3><NuxtLink to="/portfolio-details">Movie Recommendation</NuxtLink></h3>
-                            <span>System Project</span>
-                            <NuxtLink to="/portfolio-details" class="link-btn"><i class="flaticon-next-button"></i></NuxtLink>
+            <div class="section-title-with-large-box">
+                <span>
+                    <h2>Our Latest Portfolios</h2>
+                </span>
+            </div>
+            <div class="row" v-if="portfolios !== []">
+                <div class="col-lg-4 col-md-6" v-for="portfolio in portfolios.slice(
+                    (currentPage - 1) * perPage,
+                    currentPage * perPage,
+                )" :key="portfolio.id">
+                    <div class="single-blog-post">
+                        <div class="image">
+                            <NuxtLink :to="'/portpolio-details/' + portfolio.attributes.slug" class="d-block">
+                                <img :src="portfolio.attributes.image.data.attributes.url" alt="blog">
+                            </NuxtLink>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-portfolio-box">
-                        <NuxtLink to="/portfolio-details" class="image d-block">
-                            <img src="~/assets/images/portfolio/portfolio-img2.jpg" alt="image">
-                        </NuxtLink>
 
                         <div class="content">
-                            <h3><NuxtLink to="/portfolio-details">Customer Segmentation</NuxtLink></h3>
-                            <span>Machine Learning</span>
-                            <NuxtLink to="/portfolio-details" class="link-btn"><i class="flaticon-next-button"></i></NuxtLink>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-portfolio-box">
-                        <NuxtLink to="/portfolio-details" class="image d-block">
-                            <img src="~/assets/images/portfolio/portfolio-img3.jpg" alt="image">
-                        </NuxtLink>
-
-                        <div class="content">
-                            <h3><NuxtLink to="/portfolio-details">Data Analysis</NuxtLink></h3>
-                            <span>Web Project</span>
-                            <NuxtLink to="/portfolio-details" class="link-btn"><i class="flaticon-next-button"></i></NuxtLink>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-portfolio-box">
-                        <NuxtLink to="/portfolio-details" class="image d-block">
-                            <img src="~/assets/images/portfolio/portfolio-img4.jpg" alt="image">
-                        </NuxtLink>
-
-                        <div class="content">
-                            <h3><NuxtLink to="/portfolio-details">Detection Project</NuxtLink></h3>
-                            <span>Programming</span>
-                            <NuxtLink to="/portfolio-details" class="link-btn"><i class="flaticon-next-button"></i></NuxtLink>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-portfolio-box">
-                        <NuxtLink to="/portfolio-details" class="image d-block">
-                            <img src="~/assets/images/portfolio/portfolio-img5.jpg" alt="image">
-                        </NuxtLink>
-
-                        <div class="content">
-                            <h3><NuxtLink to="/portfolio-details">Data Scientist</NuxtLink></h3>
-                            <span>Data Science</span>
-                            <NuxtLink to="/portfolio-details" class="link-btn"><i class="flaticon-next-button"></i></NuxtLink>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-portfolio-box">
-                        <NuxtLink to="/portfolio-details" class="image d-block">
-                            <img src="~/assets/images/portfolio/portfolio-img6.jpg" alt="image">
-                        </NuxtLink>
-
-                        <div class="content">
-                            <h3><NuxtLink to="/portfolio-details">Benefits Research</NuxtLink></h3>
-                            <span>Science Projects</span>
-                            <NuxtLink to="/portfolio-details" class="link-btn"><i class="flaticon-next-button"></i></NuxtLink>
+                            <h3>
+                                <NuxtLink :to="'/portpolio-details/' + portfolio.attributes.slug">
+                                    {{ portfolio.attributes.title }}
+                                </NuxtLink>
+                            </h3>
+                            <p>{{ portfolio.attributes.shortDesc }}</p>
+                            <div class="d-flex align-items-center">
+                                <!-- <img :src="blog.attributes.avtar.data.attributes.url" alt="blog"> -->
+                                <div class="info">
+                                    <!-- <h5>{{ blog.attributes.author }}</h5> -->
+                                    <span>{{ portfolio.attributes.date }}</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-12 col-md-12">
                     <div class="pagination-area text-center">
-                        <a href="/portfolio-five" class="prev page-numbers"><i class='bx bx-chevrons-left'></i></a>
-                        <span class="page-numbers current" aria-current="page">1</span>
-                        <a href="/portfolio-five" class="page-numbers">2</a>
-                        <a href="/portfolio-five" class="page-numbers">3</a>
-                        <a href="/portfolio-five" class="page-numbers">4</a>
-                        <a href="/portfolio-five" class="next page-numbers"><i class='bx bx-chevrons-right'></i></a>
+                        <b-pagination v-model="currentPage" :total-rows="rows" :per-page="perPage" aria-controls="itemList"
+                            align="center"></b-pagination>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
 
+import axios from 'axios'
+
 export default {
-    name: 'PortfolioFiveContent'
+    name: 'BlogContent',
+    data() {
+        return {
+            portfolios: [],
+            rows: 0,
+            currentPage: 1,
+            perPage: 9,
+        }
+    },
+    created: async function () {
+        const response = await axios.get('http://localhost:1337/api/portfolios?populate=*')
+        this.portfolios = response.data.data;
+        this.rows = this.portfolios?.length;
+    },
 }
 </script>
