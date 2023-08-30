@@ -26,7 +26,7 @@
                             </li>
                         </ul>
                         <div class="about-btn">
-                            <NuxtLink to="/about-one" class="default-btn-with-radius">
+                            <NuxtLink to="/about-us" class="default-btn-with-radius">
                                 More About Us 
                                 <i class="flaticon-next-button"></i>
                             </NuxtLink>
