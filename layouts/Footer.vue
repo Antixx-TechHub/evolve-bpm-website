@@ -33,13 +33,13 @@
                                 <NuxtLink to="/">Home</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/about-one">About</NuxtLink>
+                                <NuxtLink to="/about-us">About Us</NuxtLink>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <NuxtLink to="/pricing">Pricing</NuxtLink>
-                            </li>
+                            </li> -->
                             <li>
-                                <NuxtLink to="/portfolio-two">Portfolio</NuxtLink>
+                                <NuxtLink to="/portfolio">Portfolio</NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink to="/contact">Contact</NuxtLink>
@@ -54,19 +54,19 @@
 
                         <ul class="footer-links-list">
                             <li>
-                                <NuxtLink to="/team-two">Team</NuxtLink>
+                                <NuxtLink to="/team">Team</NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink to="/contact">Contact</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/services-one">Services</NuxtLink>
+                                <NuxtLink to="/services">Services</NuxtLink>
                             </li>
                             <!-- <li>
                                 <NuxtLink to="/faq">FAQ</NuxtLink>
                             </li> -->
                             <li>
-                                <NuxtLink to="/blog-one">Blog</NuxtLink>
+                                <NuxtLink to="/blogs">Blog</NuxtLink>
                             </li>
                         </ul>
                     </div>

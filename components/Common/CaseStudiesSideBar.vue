@@ -19,12 +19,12 @@
                     <img :src="casestudy.attributes.image.data.attributes.url" alt="blog">
                 </router-link>
                 <div class="info">
-                    <time datetime="2022-06-30">{{ casestudy.attributes.date }}</time>
                     <h4 class="title usmall">
                         <router-link :to="'/case-studies-details/' + casestudy.attributes.slug">
                             {{ casestudy.attributes.title }}
                         </router-link>
                     </h4>
+                    <time datetime="2022-06-30">{{ casestudy.attributes.date }}</time>
                 </div>
             </article>
 

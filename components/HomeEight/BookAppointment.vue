@@ -27,7 +27,7 @@
                     <div class="col-lg-4 col-md-12">
                         <form class="it-book-appointmen-form">
                             <div class="content">
-                                <h3>Book appointment</h3>
+                                <h3>Get A Free Trail Service</h3>
                                 <span>It's out pleasure to have a chance to cooperate.</span>
                             </div>
                             <div class="form-group">

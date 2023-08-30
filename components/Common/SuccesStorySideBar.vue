@@ -19,12 +19,12 @@
                     <img :src="successstory.attributes.image.data.attributes.url" alt="blog">
                 </router-link>
                 <div class="info">
-                    <time datetime="2022-06-30">{{ successstory.attributes.date }}</time>
                     <h4 class="title usmall">
                         <router-link :to="'/success-stories-details/' + successstory.attributes.slug">
                             {{ successstory.attributes.title }}
                         </router-link>
                     </h4>
+                    <time datetime="2022-06-30">{{ successstory.attributes.date }}</time>
                 </div>
             </article>
 

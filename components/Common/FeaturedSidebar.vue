@@ -19,12 +19,12 @@
                     <img :src="featuredblog.attributes.image.data.attributes.url" alt="blog">
                 </router-link>
                 <div class="info">
-                    <time datetime="2022-06-30">{{ featuredblog.attributes.date }}</time>
                     <h4 class="title usmall">
                         <router-link :to="'/featured-blog-details/' + featuredblog.attributes.slug">
                             {{ featuredblog.attributes.title }}
                         </router-link>
                     </h4>
+                    <time datetime="2022-06-30">{{ featuredblog.attributes.date }}</time>
                 </div>
             </article>
 

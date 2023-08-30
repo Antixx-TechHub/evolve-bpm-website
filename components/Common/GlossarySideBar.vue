@@ -19,12 +19,12 @@
                         <img :src="glossary.attributes.image.data.attributes.url" alt="blog">
                     </router-link>
                     <div class="info">
-                        <time datetime="2022-06-30">{{ glossary.attributes.date }}</time>
                         <h4 class="title usmall">
                             <router-link :to="'/glossary-details/' + glossary.attributes.slug">
                                 {{ glossary.attributes.title }}
                             </router-link>
                         </h4>
+                        <time datetime="2022-06-30">{{ glossary.attributes.date }}</time>
                     </div>
                 </article>
 

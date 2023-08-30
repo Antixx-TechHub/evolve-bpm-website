@@ -23,14 +23,14 @@
                                 <NuxtLink to="" class="nav-link">Company</NuxtLink>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <NuxtLink to="/about-two" class="nav-link">About Us</NuxtLink>
+                                        <NuxtLink to="/about-us" class="nav-link">About Us</NuxtLink>
                                     </li>
-                                    <li class="nav-item"><a href="team-two" class="nav-link">Team</a>
+                                    <li class="nav-item"><a href="team" class="nav-link">Team</a>
                                     </li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a href="services-one" class="nav-link">Services</a>
+                            <li class="nav-item"><a href="services" class="nav-link">Services</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <NuxtLink to="/services-details" class="nav-link">Services Details</NuxtLink>
@@ -39,7 +39,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <NuxtLink to="/portfolio-five" class="nav-link">Portfolio</NuxtLink>
+                                <NuxtLink to="/portfolio" class="nav-link">Portfolio</NuxtLink>
                             </li>
 
                             <li class="nav-item">

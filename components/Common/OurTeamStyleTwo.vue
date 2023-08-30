@@ -7,7 +7,7 @@
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
             </div>
 
-            <div class="team-slides owl-carousel owl-theme">
+            <div class="team-slides owl-carousel owl-theme" v-if="teams !== null">
                 <carousel
                     :autoplay="true"
                     :loop="true"
@@ -16,16 +16,13 @@
                     :paginationEnabled="true"
                     :perPageCustom="[[0, 1], [576, 2], [768, 2], [992, 4], [1200, 4]]"
                 >
-                    <slide>
+                    <slide v-for="team in teams.singleTeam" :key="team.id">
                         <div class="single-team-member">
                             <div class="image">
-                                <img
-                                src="~/assets/images/team/team-img1.jpg"
-                                alt="team-image"
-                                />
+                                <img :src="team.image.data.attributes.url" alt="teams">
 
                                 <ul class="social-link">
-                                <li>
+                                <!-- <li>
                                     <a
                                     href="https://www.facebook.com/"
                                     class="d-block"
@@ -48,10 +45,10 @@
                                     target="_blank"
                                     ><i class="bx bxl-instagram"></i
                                     ></a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a
-                                    href="https://www.linkedin.com/"
+                                    :href="team.linkedin"
                                     class="d-block"
                                     target="_blank"
                                     ><i class="bx bxl-linkedin"></i
@@ -61,272 +58,14 @@
                             </div>
 
                             <div class="content">
-                                <h3>James Anderson</h3>
-                                <span>CEO</span>
+                                <h3>{{ team.title }}</h3>
+                                <span>{{ team.designation }}</span>
                                 <i class="flaticon-share-icon"></i>
                             </div>
                         </div>
                     </slide>
 
-                    <slide>
-                        <div class="single-team-member">
-                            <div class="image">
-                                <img
-                                src="~/assets/images/team/team-img2.jpg"
-                                alt="team-image"
-                                />
-
-                                <ul class="social-link">
-                                <li>
-                                    <a
-                                    href="https://www.facebook.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-facebook"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://twitter.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-twitter"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://www.instagram.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-instagram"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://www.linkedin.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-linkedin"></i
-                                    ></a>
-                                </li>
-                                </ul>
-                            </div>
-
-                            <div class="content">
-                                <h3>Sarah Taylor</h3>
-                                <span>Marketing Lead</span>
-                                <i class="flaticon-share-icon"></i>
-                            </div>
-                        </div>
-                    </slide>
-
-                    <slide>
-                        <div class="single-team-member">
-                            <div class="image">
-                                <img
-                                src="~/assets/images/team/team-img3.jpg"
-                                alt="team-image"
-                                />
-
-                                <ul class="social-link">
-                                <li>
-                                    <a
-                                    href="https://www.facebook.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-facebook"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://twitter.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-twitter"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://www.instagram.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-instagram"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://www.linkedin.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-linkedin"></i
-                                    ></a>
-                                </li>
-                                </ul>
-                            </div>
-
-                            <div class="content">
-                                <h3>Taylor Sopia</h3>
-                                <span>Web Designer</span>
-                                <i class="flaticon-share-icon"></i>
-                            </div>
-                        </div>
-                    </slide>
-
-                    <slide>
-                        <div class="single-team-member">
-                            <div class="image">
-                                <img
-                                src="~/assets/images/team/team-img4.jpg"
-                                alt="team-image"
-                                />
-
-                                <ul class="social-link">
-                                <li>
-                                    <a
-                                    href="https://www.facebook.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-facebook"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://twitter.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-twitter"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://www.instagram.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-instagram"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://www.linkedin.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-linkedin"></i
-                                    ></a>
-                                </li>
-                                </ul>
-                            </div>
-
-                            <div class="content">
-                                <h3>Harry Steve</h3>
-                                <span>Web Developer</span>
-                                <i class="flaticon-share-icon"></i>
-                            </div>
-                        </div>
-                    </slide>
-
-                    <slide>
-                        <div class="single-team-member">
-                            <div class="image">
-                                <img
-                                src="~/assets/images/team/team-img5.jpg"
-                                alt="team-image"
-                                />
-
-                                <ul class="social-link">
-                                <li>
-                                    <a
-                                    href="https://www.facebook.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-facebook"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://twitter.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-twitter"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://www.instagram.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-instagram"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://www.linkedin.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-linkedin"></i
-                                    ></a>
-                                </li>
-                                </ul>
-                            </div>
-
-                            <div class="content">
-                                <h3>Alina Smith</h3>
-                                <span>Advisor</span>
-                                <i class="flaticon-share-icon"></i>
-                            </div>
-                        </div>
-                    </slide>
-
-                    <slide>
-                        <div class="single-team-member">
-                            <div class="image">
-                                <img
-                                src="~/assets/images/team/team-img6.jpg"
-                                alt="team-image"
-                                />
-
-                                <ul class="social-link">
-                                <li>
-                                    <a
-                                    href="https://www.facebook.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-facebook"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://twitter.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-twitter"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://www.instagram.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-instagram"></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                    href="https://www.linkedin.com/"
-                                    class="d-block"
-                                    target="_blank"
-                                    ><i class="bx bxl-linkedin"></i
-                                    ></a>
-                                </li>
-                                </ul>
-                            </div>
-
-                            <div class="content">
-                                <h3>David Warner</h3>
-                                <span>Support</span>
-                                <i class="flaticon-share-icon"></i>
-                            </div>
-                        </div>
-                    </slide>
+                    
                 </carousel>
             </div>
         </div>
@@ -337,8 +76,22 @@
     </div>
 </template>
 
+
 <script>
+import axios from 'axios'
+
 export default {
-  name: "OurTeamStyleTwo",
-};
+    name: 'OurTeam',
+    data() {
+        return {
+            teams: null,
+        }
+    },
+    created: async function () {
+        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/team?populate=deep,5')
+        const { data: { attributes } } = response.data
+        this.teams = attributes
+    },
+
+}
 </script>

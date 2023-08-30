@@ -1,7 +1,7 @@
 <template>
     <div>
         <NavbarStyleTwo />
-        <PageTitle pageTitle="Portfolio 3 Columns" />
+        <PageTitle pageTitle="Portfolio " />
         <PortfolioFiveContent />
         <FooterTwo />
     </div>

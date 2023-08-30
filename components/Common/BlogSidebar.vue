@@ -19,12 +19,12 @@
                         <img :src="blog.attributes.image.data.attributes.url" alt="blog">
                     </router-link>
                     <div class="info">
-                        <time datetime="2022-06-30">{{ blog.attributes.date }}</time>
                         <h4 class="title usmall">
                             <router-link :to="'/blog-details/' + blog.attributes.slug">
                                 {{ blog.attributes.title }}
                             </router-link>
                         </h4>
+                        <time datetime="2022-06-30">{{ blog.attributes.date }}</time>
                     </div>
                 </article>
 

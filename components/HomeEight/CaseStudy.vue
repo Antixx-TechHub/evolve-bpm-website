@@ -10,36 +10,33 @@
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-12">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore magna aliqua. quis adipisicing elit nostrud exercitation ullamco laboris.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                            labore dolore magna aliqua. quis adipisicing elit nostrud exercitation ullamco laboris.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" v-if="casestudies !== []">
             <div class="case-study-slides">
-                <carousel
-                    :autoplay="true"
-                    :loop="true"
-                    :autoplayTimeout="7000"
-                    :speed="1000"
-                    :paginationEnabled="true"
-                    :perPageCustom="[[0, 1], [576, 1], [768, 2], [1024, 3], [1200, 4], [1200, 5]]"
-                >
-                    <slide 
-                        v-for="slide in carouselItems" 
-                        :key="slide.id"
-                    >
+                <carousel :autoplay="true" :loop="true" :autoplayTimeout="7000" :speed="1000" :paginationEnabled="true"
+                    :perPageCustom="[[0, 1], [576, 1], [768, 2], [1024, 3], [1200, 4], [1200, 5]]">
+                    <slide v-for="casestudy in casestudies.slice(
+                        (currentPage - 1) * perPage,
+                        currentPage * perPage,
+                    )" :key="casestudy.id">
                         <div class="case-study-card">
                             <div class="case-study-image">
-                                <NuxtLink to="/case-studies-details">
-                                    <img :src="slide.image" alt="image">
+                                <NuxtLink :to="'/case-studies-details/' + casestudy.attributes.slug" class="d-block">
+                                    <img :src="casestudy.attributes.image.data.attributes.url" alt="blog">
                                 </NuxtLink>
                             </div>
                             <div class="case-study-content">
-                                <span>{{slide.tag}}</span>
+                                <!-- <span>{{slide.tag}}</span> -->
                                 <h3>
-                                    <NuxtLink to="/case-studies-details">{{slide.title}}</NuxtLink>
+                                    <NuxtLink :to="'/case-studies-details/' + casestudy.attributes.slug">
+                                        {{ casestudy.attributes.title }}
+                                    </NuxtLink>
                                 </h3>
                             </div>
                         </div>
@@ -50,90 +47,25 @@
     </div>
 </template>
 
+
 <script>
+
+import axios from 'axios'
+
 export default {
-    name: 'CaseStudy',
-    data: () => ({
-        settings: {
-            itemsToShow: 1,
-            snapAlign: 'center',
-        },
-        carouselItems: [
-            {
-                id: 1,
-                image: require('~/assets/images/startup-it-agency/case-study/case-study1.jpg'),
-                tag: 'Marketing / Design',
-                title: 'Web development',
-            },
-            {
-                id: 2,
-                image: require('~/assets/images/startup-it-agency/case-study/case-study2.jpg'),
-                tag: 'Ideas / Design',
-                title: 'Smart vision',
-            },
-            {
-                id: 3,
-                image: require('~/assets/images/startup-it-agency/case-study/case-study3.jpg'),
-                tag: 'Marketing / Design',
-                title: 'Virtual reality',
-            },
-            {
-                id: 4,
-                image: require('~/assets/images/startup-it-agency/case-study/case-study4.jpg'),
-                tag: 'Ideas / Design',
-                title: 'Tech solutions',
-            },
-            {
-                id: 5,
-                image: require('~/assets/images/startup-it-agency/case-study/case-study5.jpg'),
-                tag: 'Marketing / Design',
-                title: 'Platform intergation',
-            },
-            {
-                id: 6,
-                image: require('~/assets/images/startup-it-agency/case-study/case-study2.jpg'),
-                tag: 'Ideas / Design',
-                title: 'Smart vision',
-            },
-            {
-                id: 7,
-                image: require('~/assets/images/startup-it-agency/case-study/case-study3.jpg'),
-                tag: 'Marketing / Design',
-                title: 'Virtual reality',
-            },
-            {
-                id: 8,
-                image: require('~/assets/images/startup-it-agency/case-study/case-study4.jpg'),
-                tag: 'Ideas / Design',
-                title: 'Tech solutions',
-            },
-        ],
-        breakpoints: {
-            0: {
-                itemsToShow: 1,
-                snapAlign: 'center',
-			},
-            576: {
-                itemsToShow: 1,
-                snapAlign: 'center',
-            },
-            768: {
-                itemsToShow: 2,
-                snapAlign: 'center',
-            },
-            1024: {
-                itemsToShow: 3,
-                snapAlign: 'center',
-            },
-            1200: {
-                itemsToShow: 4,
-                snapAlign: 'center',
-            },
-            1550: {
-                itemsToShow: 5,
-                snapAlign: 'center',
-            },
-        },
-    }),
+    name: 'Casestudy',
+    data() {
+        return {
+            casestudies: [],
+            rows: 0,
+            currentPage: 1,
+            perPage: 6,
+        }
+    },
+    created: async function () {
+        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/case-studies?populate=*')
+        this.casestudies = response.data.data.sort((b, a) => a.id - b.id);
+        this.rows = this.casestudies?.length;
+    },
 }
 </script>

@@ -5,7 +5,7 @@
         <AboutUsStyleThree class="pt-100" />
         <HistoryBegins />
         <OurTeamStyleTwo />
-        <WhatOurClientsSaying />
+        <OurClientsAreSaying />
         <Partner />
         <Footer />
     </div>
@@ -17,7 +17,7 @@
     import AboutUsStyleThree from '../components/Common/AboutUsStyleThree'
     import HistoryBegins from '../components/Common/HistoryBegins'
     import OurTeamStyleTwo from '../components/Common/OurTeamStyleTwo'
-    import WhatOurClientsSaying from '../components/HomeThree/WhatOurClientsSaying'
+    import OurClientsAreSaying from '../components/HomeEight/OurClientsAreSaying'
     import Partner from '../components/Common/Partner'
     import Footer from '../layouts/Footer'
 
@@ -28,7 +28,7 @@
             AboutUsStyleThree,
             HistoryBegins,
             OurTeamStyleTwo,
-            WhatOurClientsSaying,
+            OurClientsAreSaying,
             Partner,
             Footer,
         }
