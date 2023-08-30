@@ -27,48 +27,6 @@
                         <time datetime="2022-06-30">{{ glossary.attributes.date }}</time>
                     </div>
                 </article>
-
-            <!-- <article class="item">
-                <NuxtLink to="/blog-details-one" class="thumb">
-                    <span class="fullimage cover bg1" role="img"></span>
-                </NuxtLink>
-                <div class="info">
-                    <span>June 10, 2021</span>
-                    <h4 class="title usmall">
-                        <NuxtLink to="/blog-details-one">The Data Surrounding Higher Education</NuxtLink>
-                    </h4>
-                </div>
-
-                <div class="clear"></div>
-            </article>
-
-            <article class="item">
-                <NuxtLink to="/blog-details-one" class="thumb">
-                    <span class="fullimage cover bg2" role="img"></span>
-                </NuxtLink>
-                <div class="info">
-                    <span>June 21, 2021</span>
-                    <h4 class="title usmall">
-                        <NuxtLink to="/blog-details-one">Conversion Rate the Sales Funnel Optimization</NuxtLink>
-                    </h4>
-                </div>
-
-                <div class="clear"></div>
-            </article>
-
-            <article class="item">
-                <NuxtLink to="/blog-details-one" class="thumb">
-                    <span class="fullimage cover bg3" role="img"></span>
-                </NuxtLink>
-                <div class="info">
-                    <span>June 30, 2021</span>
-                    <h4 class="title usmall">
-                        <NuxtLink to="/blog-details-one">Business Data is changing the world’s Energy</NuxtLink>
-                    </h4>
-                </div>
-
-                <div class="clear"></div>
-            </article> -->
         </div>
 
         <div class="widget widget_categories">
@@ -79,14 +37,6 @@
                         glossarycategory.attributes.name }}</router-link>
                 </li>
             </ul>
-
-            <!-- <ul>
-                <li><a href="/blog-one">Design <span class="post-count">(03)</span></a></li>
-                <li><a href="/blog-one">Lifestyle <span class="post-count">(05)</span></a></li>
-                <li><a href="/blog-one">Script <span class="post-count">(10)</span></a></li>
-                <li><a href="/blog-one">Device <span class="post-count">(08)</span></a></li>
-                <li><a href="/blog-one">Tips <span class="post-count">(01)</span></a></li>
-            </ul> -->
         </div>
         
     </div>
@@ -113,7 +63,7 @@ export default {
                 console.error(error);
             });
         const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/glossary-categories')
-        this.glossarycategories = response.data.data.sort((b, a) => a.id - b.id);
+        this.glossarycategories = response.data.data.sort((a, b) => a.id - b.id);
     },
 }
 </script>

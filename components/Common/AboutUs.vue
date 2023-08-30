@@ -37,7 +37,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <NuxtLink to="/about-one" class="default-btn">More About Us</NuxtLink>
+                            <NuxtLink to="/about-us" class="default-btn">More About Us</NuxtLink>
                         </div>
                     </div>
                 </div>
