@@ -32,8 +32,8 @@
                     >
                         <div class="case-study-card">
                             <div class="case-study-image">
-                                <NuxtLink to="/case-studies-details">
-                                    <img :src="slide.image" alt="image">
+                                <NuxtLink :to="'/case-studies-details/' + casestudy.attributes.slug" class="d-block">
+                                    <img :src="casestudy.attributes.image.data.attributes.url" alt="blog">
                                 </NuxtLink>
                             </div>
                             <div class="case-study-content">
