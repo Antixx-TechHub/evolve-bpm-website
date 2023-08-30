@@ -56,18 +56,18 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 :root {
-  --fontFamily: 'Nunito', sans-serif;
+  --fontFamily: 'Roboto', sans-serif;
   --mainColor: #fe4c1c;
   --optionalColor: #4b5280;
   --whiteColor: #ffffff;
   --blackColor: #080e32;
   --fontSize: 16px;
   --transition: .5s;
-  --fontFamily-2: 'Kumbh Sans', sans-serif;
+  --fontFamily-2: 'Roboto', sans-serif;
   --mainColor-2: #5F2DEE;
   --optionalColor-2: #777181;
   --blackColor-2: #1B1525;
-  --fontFamily-3: 'Josefin Sans', sans-serif;
+  --fontFamily-3: 'Roboto', sans-serif;
   --mainColor-3: #0076EC;
   --optionalColor-3: #666666;
   --optionalfontFamily: 'Roboto', sans-serif;
@@ -601,8 +601,8 @@ Navbar Area CSS
 
 .rivate-nav .navbar .navbar-nav .nav-item a {
   color: var(--blackColor);
-  font-size: 17.5px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   padding-left: 0;
   padding-right: 0;
   padding-top: 25px;
@@ -667,8 +667,8 @@ Navbar Area CSS
   position: relative;
   display: block;
   color: var(--blackColor);
-  font-size: 16.5px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .rivate-nav .navbar .navbar-nav .nav-item .dropdown-menu li a i {
@@ -9867,7 +9867,7 @@ Footer Area CSS
 .single-footer-widget .footer-links-list li {
   margin-bottom: 12px;
   color: #ededed;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .single-footer-widget .footer-links-list li a {
@@ -9894,7 +9894,7 @@ Footer Area CSS
   color: #ededed;
   position: relative;
   padding-left: 23px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .single-footer-widget .footer-contact-info li a {

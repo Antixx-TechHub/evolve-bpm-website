@@ -3,7 +3,7 @@
         <div class="rivate-nav">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <NuxtLink class="navbar-brand" to="/">
+                    <NuxtLink class="navbar-brand" to="/#">
                         <img src="~/assets/images/newlogo.svg" alt="logo">
                     </NuxtLink>
 
@@ -16,23 +16,14 @@
                     <b-collapse class="collapse navbar-collapse" id="navbarSupportedContent" is-nav>
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="/" class="nav-link">
-                                    Home
-                                </a>
+                                <NuxtLink to="/" class="nav-link">Home</NuxtLink>
                             </li>
 
                             <li class="nav-item">
-                                <a href="/about-two" class="nav-link">
-                                    About
-                                    <i class='bx bx-chevron-down'></i>
-                                </a>
+                                <NuxtLink to="" class="nav-link">Company</NuxtLink>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <NuxtLink to="/case-studies" class="nav-link">Case studies</NuxtLink>
-                                    </li>
-                                    <li class="nav-item">
-                                        <NuxtLink to="/case-studies-details" class="nav-link">Case studies details
-                                        </NuxtLink>
+                                        <NuxtLink to="/about-two" class="nav-link">About Us</NuxtLink>
                                     </li>
                                     <li class="nav-item"><a href="team-two" class="nav-link">Team</a>
                                     </li>
@@ -49,19 +40,14 @@
 
                             <li class="nav-item">
                                 <NuxtLink to="/portfolio-five" class="nav-link">Portfolio</NuxtLink>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <NuxtLink to="/portfolio-details" class="nav-link">Portfolio Details</NuxtLink>
-                                    </li>
-                                </ul>
                             </li>
 
                             <li class="nav-item">
-                                <NuxtLink to="/blogs" class="nav-link">Blog</NuxtLink>
+                                <NuxtLink to="" class="nav-link">Resources</NuxtLink>
                                 <ul class="dropdown-menu">
-                                    <!-- <li class="nav-item">
-                                        <NuxtLink to="/blog-details-one" class="nav-link">Single Post</NuxtLink>
-                                    </li> -->
+                                    <li class="nav-item">
+                                        <NuxtLink to="/blogs" class="nav-link">Blogs</NuxtLink>
+                                    </li>
                                     <li class="nav-item">
                                         <NuxtLink to="/glossaries" class="nav-link">Glossaries</NuxtLink>
                                     </li>
