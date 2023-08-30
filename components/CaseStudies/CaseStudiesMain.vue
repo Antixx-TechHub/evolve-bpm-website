@@ -1,11 +1,6 @@
 <template>
     <div class="blog-area pt-100 pb-75">
         <div class="container">
-            <div class="section-title-with-large-box">
-                <span>
-                    <h2>Our Latest Case Studies</h2>
-                </span>
-            </div>
             <div class="row justify-content-center" v-if="casestudies !== []">
                 <div class="col-lg-4 col-md-6 justify-content-center" v-for="casestudy in casestudies.slice(
                     (currentPage - 1) * perPage,

@@ -1,7 +1,7 @@
 <template>
-    <section class="blog-area bg-f9f9f9 ptb-100">
+    <section class="blog-area bg-f9f9f9 pt-30">
         <div class="container">
-            <div class="section-title-with-large-box">
+            <div class="section-title">
                 <span>
                     <h2>Our Latest Blog</h2>
                 </span>

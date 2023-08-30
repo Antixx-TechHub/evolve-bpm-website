@@ -160,6 +160,10 @@ p:last-child {
   padding-top: 70px;
 }
 
+.pt-30 {
+  padding-top: 30px;
+}
+
 .pb-70 {
   padding-bottom: 70px;
 }
