@@ -57,7 +57,7 @@
                                 <NuxtLink to="/team">Team</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/contact">Contact</NuxtLink>
+                                <NuxtLink to="/contact-us">Contact</NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink to="/services">Services</NuxtLink>

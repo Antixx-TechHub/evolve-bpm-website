@@ -62,7 +62,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <NuxtLink to="/contact" class="nav-link">Contact</NuxtLink>
+                                <NuxtLink to="/contact-us" class="nav-link">Contact</NuxtLink>
                             </li>
                         </ul>
                     </b-collapse>
