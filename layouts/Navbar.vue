@@ -57,6 +57,9 @@
                                     <li class="nav-item">
                                         <NuxtLink to="/case-studies" class="nav-link">Case Study</NuxtLink>
                                     </li>
+                                    <li class="nav-item">
+                                        <NuxtLink to="/carrers" class="nav-link">Carrers</NuxtLink>
+                                    </li>
                                 </ul>
 
                             </li>
